@@ -1,0 +1,9 @@
+header {
+    @apply fixed top-0 flex left-0 right-0 justify-between items-center p-4 bg-secondary;
+}
+.nav-wrapper {
+    @apply flex gap-4;
+}
+.nav-button {
+    @apply block py-3 px-8 bg-primary whitespace-nowrap text-primary-light text-xl font-black;
+}
