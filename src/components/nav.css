@@ -1,4 +1,5 @@
 header {
+    z-index: 100000;
     @apply fixed top-0 flex left-0 right-0 justify-between items-center p-4 bg-secondary;
 }
 .nav-wrapper {

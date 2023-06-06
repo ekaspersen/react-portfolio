@@ -2,17 +2,21 @@ import React from "react";
 import Slider from "react-slick";
 
 const skills = [
-    "HTML",
-    "SEO",
+    "HTML&SEO",
     "CSS",
+    "SASS/SCSS",
     "TailwindCSS",
     "javaScript",
     "ReactJs",
-    "SASS/SCSS",
-    "Git / branching",
-    "UX-principles",
-    "UI-designer",
+    "API handling",
+    "C.R.U.D.stuff",
+    "Git",
+    "npm",
+    "Branching",
+    "Wireframing",
     "Figma",
+    "UI-design",
+    "principles of UX",
 ];
 
 const EpicSlider = () => {
@@ -25,9 +29,7 @@ const EpicSlider = () => {
         autoplay: true,
         autoplaySpeed: 2000,
         cssEase: "linear",
-        centerMode: true,
-        centerPadding: "60px",
-        variableWidth: true, // add this
+        variableWidth: true,
     };
 
     return (
@@ -36,7 +38,7 @@ const EpicSlider = () => {
                 {skills.map((text, index) => (
                     <div
                         key={index}
-                        className="mx-16 my-8 text-white text-8xl whitespace-nowrap" // add the whitespace-nowrap class
+                        className="mx-16 my-8 text-white text-8xl whitespace-nowrap"
                     >
                         {text}
                     </div>
