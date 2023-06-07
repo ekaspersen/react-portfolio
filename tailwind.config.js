@@ -7,6 +7,10 @@ module.exports = {
                 inter: ["Inter", "sans-serif"],
                 montserrat: ["Montserrat", "serif"],
             },
+            fontSize: {
+                "3xl": "32px",
+                "6xl": "56px",
+            },
             maxWidth: {
                 "short-text": "420px",
             },
@@ -18,6 +22,7 @@ module.exports = {
                 secondary: {
                     DEFAULT: "#261B10",
                     light: "#B6DC76",
+                    light50op: "rgba(182,220,118,50%)",
                 },
                 black: "#000000",
                 white: "#FFFFFFEE",

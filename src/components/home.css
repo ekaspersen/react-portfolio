@@ -1,0 +1,9 @@
+.o-pinpoint {
+    position: relative;
+}
+.o-pinpoint::before {
+    content: url("../assets/icons/PinAngle.svg");
+    position: absolute;
+    bottom: 50px;
+    left: 48px;
+}
