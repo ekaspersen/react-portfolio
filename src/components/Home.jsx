@@ -168,10 +168,10 @@ const Home = () => {
                 <ContactSlider direction="rtl" />
             </section>
             <section className="flex">
-                <div className="flex-1">
+                <div className="flex-1 w-full relative ">
                     <img
                         src={edueducaeducation}
-                        className="w-full h-full"
+                        className="absolute w-full h-full object-contain"
                         alt="graphic"
                     />
                 </div>
