@@ -139,7 +139,10 @@ const Home = () => {
                         </span>
                         <span className="font-bold">22 YEARS YOUNG</span>
                     </div>
-                    <Link className="underline font-bold text-primary-light">
+                    <Link
+                        to="/aboutme"
+                        className="underline font-bold text-primary-light"
+                    >
                         LINK TO ABOUT ME PAGE
                     </Link>
                 </div>
