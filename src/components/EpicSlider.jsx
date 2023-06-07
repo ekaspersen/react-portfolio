@@ -38,7 +38,7 @@ const EpicSlider = () => {
                 {skills.map((text, index) => (
                     <div
                         key={index}
-                        className="mx-16 my-8 text-white text-8xl whitespace-nowrap"
+                        className="mx-8 my-8 text-5xl xl:mx-16 text-white xl:text-8xl whitespace-nowrap"
                     >
                         {text}
                     </div>

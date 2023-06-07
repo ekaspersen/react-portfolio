@@ -3,16 +3,20 @@ module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
         extend: {
+            screens: {
+                huge: "1780px",
+            },
             fontFamily: {
                 inter: ["Inter", "sans-serif"],
                 montserrat: ["Montserrat", "serif"],
             },
             fontSize: {
-                "3xl": "32px",
-                "6xl": "56px",
+                "3xl": ["32px", "1.25"],
+                "6xl": ["56px", "1"],
             },
             maxWidth: {
                 "short-text": "420px",
+                "long-text": "620px",
             },
             colors: {
                 primary: {
