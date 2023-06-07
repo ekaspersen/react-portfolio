@@ -34,13 +34,13 @@ const EmailBox = () => {
 
     return (
         <div
-            className={`flex-1 h-full cursor-pointer bg-secondary-light text-secondary grid gap-8 place-items-center relative ${
+            className={`flex-1 h-full w-full cursor-pointer bg-secondary-light text-secondary grid gap-8 place-items-center relative ${
                 showModal ? " bg-secondary bg-opacity-50 transition-all" : ""
             }`}
             onClick={copyToClipboard}
         >
             <div className="flex flex-col gap-8">
-                <span className="font-montserrat text-6xl font-light italic">
+                <span className="font-montserrat lg:text-6xl text-3xl font-light italic">
                     {email}
                 </span>
                 <span className="font-bold text-xs">
@@ -61,7 +61,7 @@ const Home = () => {
         <div className="home">
             <section className="h-screen bg-primary flex flex-col justify-between">
                 <div className="h-[84px]"></div>
-                <h1 className="flex flex-col text-6xl gap-4 mx-8">
+                <h1 className="flex flex-col text-3xl lg:text-6xl gap-4 mx-8">
                     <span>Welcome, i am a frontend developer</span>
                     <span>
                         i <span className="text-secondary-light"> Design </span>
@@ -85,38 +85,46 @@ const Home = () => {
                 </div>
             </section>
             <EpicSlider />
-            <section className="flex w-full">
+            <section className="flex xl:flex-row flex-col-reverse w-full">
                 <div className="flex-1 flex bg-primary px-8 py-16 gap-2">
                     <img
                         src={mikaText}
                         className="h-full"
                         alt="lyrics from a grace kelly - MIKA"
                     />
-                    <div className="flex flex-col gap-3 text-secondary-light whitespace-nowrap justify-between">
+                    <div className="flex flex-col lg:gap-3 text-secondary-light whitespace-nowrap justify-between">
                         <div className="flex">
-                            <h2 className="font-bold underline  text-6xl">
+                            <h2 className="font-bold underline text-3xl lg:text-5xl xl:text-6xl">
                                 FRONTEND DEVELOPER
                             </h2>
-                            <span className="font-black text-6xl">.</span>
+                            <span className="font-blacktext-3xl lg:text-5xl xl:text-6xl">
+                                .
+                            </span>
                         </div>
                         <div className="flex">
-                            <h2 className="font-bold underline  text-6xl">
+                            <h2 className="font-bold underline text-3xl lg:text-5xl xl:text-6xl">
                                 REACT DEVELOPER
                             </h2>
-                            <span className="font-black text-6xl">.</span>
+                            <span className="font-blacktext-3xl lg:text-5xl xl:text-6xl">
+                                .
+                            </span>
                         </div>
 
                         <div className="flex">
-                            <h2 className="font-bold underline  text-6xl">
+                            <h2 className="font-bold underline text-3xl lg:text-5xl xl:text-6xl">
                                 UX&UI DESIGNER
                             </h2>
-                            <span className="font-black text-6xl">.</span>
+                            <span className="font-black text-3xl lg:text-5xl xl:text-6xl">
+                                .
+                            </span>
                         </div>
                         <div className="flex">
-                            <h1 className="font-bold underline text-secondary-light50op text-6xl">
+                            <h1 className="font-bold underline text-secondary-light50op text-3xl lg:text-5xl xl:text-6xl">
                                 UNICORN DEVELOPER
                             </h1>
-                            <span className="font-black text-6xl">.</span>
+                            <span className="font-black text-3xl lg:text-5xl xl:text-6xl">
+                                .
+                            </span>
                         </div>
                         <Link
                             to="/mywork"
@@ -126,7 +134,7 @@ const Home = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="flex-1 flex flex-col justify-between px-8 py-16 bg-secondary-light ">
+                <div className="flex-1 flex flex-col justify-between px-8 pb-16 pt-32 bg-secondary-light ">
                     <div className="flex flex-col text-primary">
                         <span className="text-7xl pb-3 font-bold text-primary-light">
                             OSL<span className="o-pinpoint">O</span>, NORWAY
@@ -147,15 +155,15 @@ const Home = () => {
                     </Link>
                 </div>
             </section>
-            <section className="flex h-screen justify-between flex-col py-16 gap-16">
+            <section className="flex xl:h-screen justify-between flex-col py-16 gap-16">
                 <ContactSlider />
-                <div className="flex justify-center items-center h-full gap-8 text-center">
+                <div className="flex flex-col xl:flex-row justify-center h-screen items-center xl:h-full gap-8 text-center">
                     <EmailBox />
                     <span className="text-5xl">or</span>
                     <a
                         href="https://www.linkedin.com/in/eskil-k-hagen-43b7011a0/"
                         target="_blank"
-                        className="flex-1 h-full bg-primary grid place-items-center"
+                        className="flex-1 w-full h-full bg-primary grid place-items-center"
                     >
                         <div className="flex flex-col gap-8">
                             <span className="font-montserrat text-6xl font-light italic">
@@ -174,7 +182,7 @@ const Home = () => {
                 <div className="flex-1 w-full relative ">
                     <img
                         src={edueducaeducation}
-                        className="absolute w-full h-full object-contain"
+                        className="absolute w-full h-full object-cover"
                         alt="graphic"
                     />
                 </div>
