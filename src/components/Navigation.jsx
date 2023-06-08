@@ -32,38 +32,37 @@ const navVariant = {
 };
 
 const listItemVariant = {
-    open: { opacity: 1 },
-    closed: { opacity: 0 },
+    open: { opacity: 1, y: 0 },
+    closed: { opacity: 0, y: -400 },
 };
 // /Motion Variants/
 
 // Function to get window's width
-const useWindowWidth = () => {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+const useIsLgOrAbove = () => {
+    const [isLgOrAbove, setIsLgOrAbove] = useState(window.innerWidth >= 1024);
 
     useEffect(() => {
-        const handleResize = () => setWindowWidth(window.innerWidth);
+        const handleResize = () => setIsLgOrAbove(window.innerWidth >= 1024);
         window.addEventListener("resize", handleResize);
         return () => {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
 
-    return windowWidth;
+    return isLgOrAbove;
 };
 
 const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const windowWidth = useWindowWidth();
+    const isLgOrAbove = useIsLgOrAbove();
 
     const toggleMenu = () => {
-        if (windowWidth <= 1024) {
+        if (!isLgOrAbove) {
             setIsOpen(!isOpen);
         }
     };
 
-    const animationState =
-        windowWidth > 1024 ? "open" : isOpen ? "open" : "closed";
+    const animationState = isLgOrAbove ? "open" : isOpen ? "open" : "closed";
 
     return (
         <header className="header-index fixed top-0 flex left-0 right-0 justify-between items-center p-4 bg-secondary">
@@ -105,6 +104,7 @@ const Nav = () => {
                 >
                     <motion.li variants={listItemVariant}>
                         <Link
+                            onClick={toggleMenu} // Add this line
                             to="/mywork"
                             className="block my-2 lg:my-0 py-3 px-8 bg-primary whitespace-nowrap text-primary-light text-xl font-black"
                         >
@@ -113,6 +113,7 @@ const Nav = () => {
                     </motion.li>
                     <motion.li variants={listItemVariant}>
                         <Link
+                            onClick={toggleMenu} // Add this line
                             to="/education"
                             className="block my-2 lg:my-0 py-3 px-8 bg-primary whitespace-nowrap text-primary-light text-xl font-black"
                         >
@@ -121,6 +122,7 @@ const Nav = () => {
                     </motion.li>
                     <motion.li variants={listItemVariant}>
                         <Link
+                            onClick={toggleMenu} // Add this line
                             to="/aboutme"
                             className="block my-2 lg:my-0 py-3 px-8 bg-primary whitespace-nowrap text-primary-light text-xl font-black"
                         >
@@ -129,6 +131,7 @@ const Nav = () => {
                     </motion.li>
                     <motion.li variants={listItemVariant}>
                         <Link
+                            onClick={toggleMenu} // Add this line
                             to="/contact"
                             className="block my-2 lg:my-0 py-3 px-8 bg-primary whitespace-nowrap text-primary-light text-xl font-black"
                         >
