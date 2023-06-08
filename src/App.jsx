@@ -6,10 +6,12 @@ import Education from "./components/Education";
 import MyWork from "./components/MyWork";
 import Nav from "./components/Navigation";
 import AboutMe from "./components/AboutMe";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
     return (
         <Router>
+            <ScrollToTop />
             <Nav />
             <Routes>
                 <Route path="/" element={<Home />} />

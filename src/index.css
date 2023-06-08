@@ -3,8 +3,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .o-pinpoint {
+        position: relative;
+    }
+    .o-pinpoint::before {
+        content: url("./assets/icons/PinAngle.svg");
+        position: absolute;
+        bottom: 46px;
+        left: 28px;
+        @apply lg:left-[48px] lg:bottom-[50px];
+    }
+    .custom-bullet {
+        display: flex;
+    }
+    .custom-bullet::before {
+        content: "-";
+        margin-right: 1rem;
+    }
+    .header-index {
+        z-index: 100000;
+    }
+}
 
 :root {
+    scroll-behavior: smooth;
     line-height: 1.5;
 
     color-scheme: light dark;

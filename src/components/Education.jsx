@@ -1,9 +1,9 @@
 import everyday from "../assets/everydayytyt.svg";
 const Education = () => {
     return (
-        <div className="h-screen grid place-items-center overflow-x overflow-x-hidden">
+        <div className="h-screen grid place-items-center">
             <section className="w-full flex justify-end xl:justify-start h-full">
-                <div className="absolute z-[-10] xl:relative flex-1 h-full grid place-items-center flex-col">
+                <div className="absolute hidden  z-[-10] xl:relative max-w-{32px} lg:max-w-full flex-1 h-full lg:grid place-items-center flex-col">
                     <img
                         src={everyday}
                         alt="graphic"
@@ -24,7 +24,7 @@ const Education = () => {
                         </p>
                     </div>
                 </div>
-                <div className="lg:w-[50vw] h-full flex flex-col gap-20 pb-32 pt-48 justify-center items-center bg-secondary-light">
+                <div className="lg:w-[50vw] h-full flex flex-col gap-8 lg:gap-20 pb-16 lg:pb-32 pt-48 justify-center items-center bg-secondary-light">
                     <div className="flex flex-col text-4xl xl:text-[64px] xl:gap-2 font-montserrat font-bold italic ">
                         <h1>Navigate Studies</h1>
                         <span className="text-primary-light">
@@ -102,7 +102,7 @@ const Education = () => {
             </section>
             <section
                 id="noroff"
-                className="w-full flex flex-col-reverse lg:flex-row h-fit bg-primary text-secondary-light"
+                className="w-full flex flex-col-reverse lg:flex-row h-fit bg-primary text-secondary-light scroll-m-8"
             >
                 <div className="flex-1 flex flex-col gap-8 px-16 pb-16 lg:py-32 box-border">
                     <h2 className="text-white font-black text-6xl lg:text-4xl xl:text-6xl w-fit">
@@ -151,7 +151,7 @@ const Education = () => {
                     </div>
                 </div>
                 <div className=" lg:w-[50vw] h-full flex flex-col box-border">
-                    <div className="flex-1 flex flex-col pl-16 py-32 bg-secondary-light text-primary">
+                    <div className="flex-1 flex flex-col pl-16 py-16 lg:py-32 bg-secondary-light text-primary">
                         <h1 className="font-black text-3xl">
                             Noroff, Oslo Campus
                         </h1>
@@ -249,9 +249,151 @@ const Education = () => {
                 </div>
             </section>
 
-            <section className="w-full flex h-screen">
-                <div className="flex-1 h-full flex flex-col"></div>
-                <div className="flex-1 h-full flex flex-col"></div>
+            <section className="w-full flex flex-col lg:flex-row-reverse">
+                <div className="flex-1 flex flex-col lg:flex-col-reverse">
+                    <div className="flex lg:hidden flex-col px-4 lg:px-8 py-12 xl:px-16 xl:py-24">
+                        <span className="text-3xl text-secondary-light font-bold">
+                            Bodø Videregående Skole
+                        </span>
+                        <span className="text-primary-light text-5xl font-black">
+                            IT1 - Programfag
+                        </span>
+                        <span className="text-xl text-white font-bold">
+                            2020 - 2021
+                        </span>
+                    </div>
+                    <div className="lg:flex mt-auto lg:bg-primary hidden flex-col px-4 py-12 lg:px-8 xl:px-16 xl:py-24">
+                        <span className="text-3xl text-primary-light font-bold">
+                            Bodin Videregående Skole
+                        </span>
+                        <span className="text-secondary-light text-5xl font-black">
+                            IT1 - Programfag
+                        </span>
+                        <span className="text-xl text-white font-bold">
+                            2020 - 2021
+                        </span>
+                    </div>
+                    <div
+                        id="bodovgs"
+                        className="md:max-w-long-text lg:max-w-none scroll-m-72 lg:scroll-m-12 flex flex-col h-full px-4 py-8 gap-8 lg:px-8 lg:py-16 xl:px-16 xl:py-24"
+                    >
+                        <p>
+                            My last year at high-school i did common studies
+                            (Påbygg), and i had IT as my extra corriculum. It
+                            was only 5 classes each week, but i got to continue
+                            to develop some of my skills from the year before.
+                            First we went over how to use HTML and CSS in 3
+                            weeks, remember it was nice to freshen up after the
+                            summer.
+                        </p>
+                        <p>
+                            Then we spent 2-3 months going over php/mysql,
+                            -mainly creating databases using C.R.U.D. After
+                            christmas we spent a long time on a main assignment;
+                            creating a Admin panel and UI where users can view
+                            inventory and update their own data for a library
+                            with html/css and php/mysql. Sadly the project is
+                            lost on a school computer.
+                        </p>
+                        <p>
+                            This was a great year for me because the tasks was
+                            simple so i got to use my time in class on learning
+                            new stuff alongside refreshing things that was
+                            unclear or forgotten from the last year!
+                        </p>
+                        <p className="text-2xl text-primary-light mt-8 h-full flex flex-col justify-between">
+                            <span>
+                                The most important qualities i got from studying
+                                IT in high-school (Learning to code was also
+                                good) must be knowledge of how the backend of
+                                everything works. Even though it is not my
+                                field, i think it is very helpful for both me
+                                and piers if developers can discuss things
+                                together -
+                            </span>
+
+                            <li className="custom-bullet font-black text-6xl">
+                                From Design to back to Front end.
+                            </li>
+                        </p>
+                    </div>
+                </div>
+                <div className="flex-1 h-full flex flex-col bg-primary lg:bg-transparent">
+                    <div className="lg:flex hidden flex-col px-4 lg:px-8 py-12 xl:px-16 xl:py-24">
+                        <span className="text-3xl text-secondary-light font-bold">
+                            Bodø Videregående Skole
+                        </span>
+                        <span className="text-primary-light text-5xl font-black">
+                            IT1 - Programfag
+                        </span>
+                        <span className="text-xl text-white font-bold">
+                            2020 - 2021
+                        </span>
+                    </div>
+                    <div className="flex lg:hidden flex-col px-4 py-12 lg:px-8 xl:px-16 xl:py-24">
+                        <span className="text-3xl  text-primary-light font-bold">
+                            Bodin Videregående Skole
+                        </span>
+                        <span className="text-secondary-light text-5xl font-black">
+                            IT1 - Programfag
+                        </span>
+                        <span className="text-xl text-white font-bold">
+                            2020 - 2021
+                        </span>
+                    </div>
+                    <div
+                        id="bodinvgs"
+                        className="md:max-w-long-text lg:max-w-none flex scroll-m-80 lg:scroll-m-[-20000px] bg-primary font-medium flex-col px-4 py-8 gap-8 lg:px-8 lg:py-16 xl:px-16 xl:py-24"
+                    >
+                        <p className="font-bold text-secondary-light50op">
+                            The start of my developer/IT career was deeply
+                            influenced by learning from an ex-military officer
+                            who started working in ICT-maintenance for several
+                            military operations in Bodø from the end of the 90s.
+                            This experience was steeped in the earliest culture
+                            of data-nerdism, and the rewards from such exposure
+                            were plentiful.
+                        </p>
+                        <p>
+                            Our studies involved learning how the w3 is put
+                            together, what/how LANs and WANs are and work, how
+                            to set up routing for LAN servers, protocols and
+                            generally how everything is set up from bits to
+                            protocols to servers talking to send code that in
+                            the end tells the screen what rgb value the pixels
+                            should fire.
+                        </p>
+                        <p>
+                            This year was my first meeting with HTML and CSS. It
+                            was a steep learning curve, but i found a passion
+                            for CSS and i had a very good understanding of
+                            bending the box model by the time the year was over.
+                            We also dabbled a bit with javaScript, nothing much
+                            but i made a very simple cookie-clicker type game
+                            and a Celsius/Fahrenheit/kelvin translator just to
+                            get familiarised with programming.
+                        </p>
+                        <p>
+                            Delving deeper into the world of back-end
+                            development, we dedicated significant time of the
+                            year learning about and creating databases with
+                            PHP/MySQL. First we learned simple programming
+                            foundations like var., arrays, loops and other logic
+                            to get started. then wee created a couple CRUD
+                            applications on our local networks.
+                        </p>
+                        <p className="font-bold text-xl text-secondary-light">
+                            My time at Bodin vgs. set the groundwork for my
+                            career and gave me a strong foundation as a
+                            developer. My teacher was a big inspiration to me
+                            with his light hearted yet disciplined take on life.
+                            It sort of feels like we got a look into how it was
+                            to work in every IT field, and it lead me down the
+                            road i’m on today feeling confident about my path
+                            onwards.
+                        </p>
+                    </div>
+                </div>
             </section>
         </div>
     );
