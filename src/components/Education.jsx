@@ -1,9 +1,9 @@
 import everyday from "../assets/everydayytyt.svg";
 const Education = () => {
     return (
-        <div className="h-screen grid place-items-center overflow-x overflow-x-hidden">
+        <div className="h-screen grid place-items-center">
             <section className="w-full flex justify-end xl:justify-start h-full">
-                <div className="absolute z-[-10] xl:relative flex-1 h-full grid place-items-center flex-col">
+                <div className="absolute hidden  z-[-10] xl:relative flex-1 h-full lg:grid place-items-center flex-col">
                     <img
                         src={everyday}
                         alt="graphic"
@@ -24,7 +24,7 @@ const Education = () => {
                         </p>
                     </div>
                 </div>
-                <div className="lg:w-[50vw] h-full flex flex-col gap-20 pb-32 pt-48 justify-center items-center bg-secondary-light">
+                <div className="lg:w-[50vw] h-full flex flex-col gap-8 lg:gap-20 pb-16 lg:pb-32 pt-48 justify-center items-center bg-secondary-light">
                     <div className="flex flex-col text-4xl xl:text-[64px] xl:gap-2 font-montserrat font-bold italic ">
                         <h1>Navigate Studies</h1>
                         <span className="text-primary-light">
@@ -151,7 +151,7 @@ const Education = () => {
                     </div>
                 </div>
                 <div className=" lg:w-[50vw] h-full flex flex-col box-border">
-                    <div className="flex-1 flex flex-col pl-16 py-32 bg-secondary-light text-primary">
+                    <div className="flex-1 flex flex-col pl-16 py-16 lg:py-32 bg-secondary-light text-primary">
                         <h1 className="font-black text-3xl">
                             Noroff, Oslo Campus
                         </h1>
