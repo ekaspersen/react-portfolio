@@ -255,7 +255,7 @@ const Education = () => {
                         <span className="text-3xl text-secondary-light font-bold">
                             Bodø Videregående Skole
                         </span>
-                        <span className="text-primary-light text-5xl font-black">
+                        <span className="text-primary-light text-4xl sm:text-5xl font-black">
                             IT1 - Programfag
                         </span>
                         <span className="text-xl text-white font-bold">
@@ -266,7 +266,7 @@ const Education = () => {
                         <span className="text-3xl text-primary-light font-bold">
                             Bodin Videregående Skole
                         </span>
-                        <span className="text-secondary-light text-5xl font-black">
+                        <span className="text-secondary-light text-4xl sm:text-5xl font-black">
                             IT1 - Programfag
                         </span>
                         <span className="text-xl text-white font-bold">
