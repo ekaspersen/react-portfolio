@@ -1,7 +1,7 @@
 import everyday from "../assets/everydayytyt.svg";
 const Education = () => {
     return (
-        <div className="h-screen grid place-items-center">
+        <div className="lg:h-screen">
             <section className="w-full flex justify-end xl:justify-start h-full">
                 <div className="absolute hidden  z-[-10] xl:relative max-w-{32px} lg:max-w-full flex-1 h-full lg:grid place-items-center flex-col">
                     <img
@@ -24,7 +24,7 @@ const Education = () => {
                         </p>
                     </div>
                 </div>
-                <div className="lg:w-[50vw] h-full flex flex-col gap-8 lg:gap-20 pb-16 lg:pb-32 pt-48 justify-center items-center bg-secondary-light">
+                <div className="lg:w-[50vw] h-full flex flex-col gap-8 lg:gap-10 pb-16 lg:pb-32 pt-48 justify-center items-center bg-secondary-light">
                     <div className="flex flex-col text-4xl xl:text-[64px] xl:gap-2 font-montserrat font-bold italic ">
                         <h1>Navigate Studies</h1>
                         <span className="text-primary-light">
@@ -33,7 +33,7 @@ const Education = () => {
                         <span className="text-primary">Navigate Studies</span>
                         <span className="text-secondary">Navigate Studies</span>
                     </div>
-                    <div className="flex flex-col gap-8 px-8">
+                    <div className="flex flex-col gap-8 px-4 sm:px-8">
                         <a
                             href="#noroff"
                             className="flex scroll-m-8 flex-col gap-4 text-secondary"
@@ -46,7 +46,7 @@ const Education = () => {
                                     <h2 className="text-base lg:text-xl">
                                         Noroff - Oslo Campus
                                     </h2>
-                                    <h3 className="lg:text-3xl text-2xl text-primary-light border-b-2 border-secondary pb-[2px]">
+                                    <h3 className="lg:text-3xl text-2xl text-primary-light sm:border-b-2 sm:border-secondary sm:pb-[2px]">
                                         Frontend Development
                                     </h3>
                                 </div>
@@ -67,7 +67,7 @@ const Education = () => {
                                     <h2 className="text-base lg:text-xl">
                                         Bodø vgs.
                                     </h2>
-                                    <h3 className="lg:text-3xl text-2xl text-primary-light border-b-2 border-secondary pb-[2px]">
+                                    <h3 className="lg:text-3xl text-2xl text-primary-light sm:border-b-2 sm:border-secondary sm:pb-[2px]">
                                         General Studies + IT1 - programfag
                                     </h3>
                                 </div>
@@ -93,7 +93,7 @@ const Education = () => {
                                     </h3>
                                 </div>
                             </div>
-                            <div className="text-xs font-montserrat font-semibold italic">
+                            <div className="text-xs font-montserrat font-semibold italic z-50">
                                 2019 - 2020
                             </div>
                         </a>
@@ -104,7 +104,7 @@ const Education = () => {
                 id="noroff"
                 className="w-full flex flex-col-reverse lg:flex-row h-fit bg-primary text-secondary-light scroll-m-8"
             >
-                <div className="flex-1 flex flex-col gap-8 px-16 pb-16 lg:py-32 box-border">
+                <div className="flex-1 flex flex-col gap-8 px-4 sm:px-16 pb-16 lg:py-32 box-border">
                     <h2 className="text-white font-black text-6xl lg:text-4xl xl:text-6xl w-fit">
                         My experience at Noroff
                     </h2>
@@ -151,7 +151,7 @@ const Education = () => {
                     </div>
                 </div>
                 <div className=" lg:w-[50vw] h-full flex flex-col box-border">
-                    <div className="flex-1 flex flex-col pl-16 py-16 lg:py-32 bg-secondary-light text-primary">
+                    <div className="flex-1 flex flex-col px-4 sm:pl-16 py-16 lg:py-32 bg-secondary-light text-primary">
                         <h1 className="font-black text-3xl">
                             Noroff, Oslo Campus
                         </h1>
@@ -160,7 +160,7 @@ const Education = () => {
                         </h2>
                         <span className="font-bold text-3xl">2021 - 2023</span>
                     </div>
-                    <div className="flex flex-col huge:flex-row gap-8 px-16 py-16 text-secondary-light">
+                    <div className="flex flex-col huge:flex-row gap-8 px-4 sm:px-16  py-16 text-secondary-light">
                         <div className="flex-1 flex flex-col overflow-hidden">
                             <p className="font-black text-3xl text-primary-light mb-2">
                                 First Years Courses
@@ -386,11 +386,10 @@ const Education = () => {
                             My time at Bodin vgs. set the groundwork for my
                             career and gave me a strong foundation as a
                             developer. My teacher was a big inspiration to me
-                            with his light hearted yet disciplined take on life.
-                            It sort of feels like we got a look into how it was
-                            to work in every IT field, and it lead me down the
-                            road i’m on today feeling confident about my path
-                            onwards.
+                            with his light hearted yet very disciplined take on
+                            teaching. We got to look into how it is to work in
+                            every IT field and it lead me down the road i’m on
+                            today, feeling confident about my path onwards.
                         </p>
                     </div>
                 </div>
