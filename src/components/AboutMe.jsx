@@ -30,12 +30,14 @@ const AboutMe = () => {
                     developing.
                 </p>
                 <p className="font-medium">
-                    In my work, I strive to create interfaces that are
-                    user-friendly and visually pleasing, always seeking to
-                    understand the end-users needs and expectations. My academic
-                    background has given me a solid foundation in coding
-                    standards and UX principles. I'm always eager to continue
-                    improving, i learn something new every day!
+                    I'm a dedicated Frontend developer, my favourite language to
+                    work with being CSS, with emmet on my side i speak
+                    css/tailwind fluently. In my work, I aim to build websites
+                    that are both attractive and user-friendly. My educational
+                    journey provided me with a solid grasp of coding rules and
+                    UX (user experience) principles. I'm always on the lookout
+                    for new learnings, taking steps every day to enhance my
+                    skills and stay at the forefront of my field.
                 </p>
                 <p className="font-medium">
                     Collaborating with team members is one of the aspects I
