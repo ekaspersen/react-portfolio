@@ -21,8 +21,11 @@ const MyWork = () => {
                     </p>
                     <p className="max-w-long-text">
                         I will be updating this page over the next couple of
-                        weeks to create and sort the content for it, stay
-                        updated!
+                        weeks.
+                        <br />
+                        Just have to style, figure out and sort the content for
+                        it, <br />
+                        stay updated!
                     </p>
                 </div>
             </div>
