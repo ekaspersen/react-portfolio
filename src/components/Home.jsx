@@ -21,14 +21,14 @@ const Home = () => {
                     </span>
                 </h1>
                 <div className="w-full flex">
-                    <div className="flex-1 px-2 sm:px-8 gap-1  flex flex-col text-primary-light">
+                    <div className="flex-1 px-2 sm:px-8 gap-1 text-xs sm:text-base flex flex-col text-primary-light">
                         <p className="font-bold opacity-50 max-w-short-text">
                             I choose a lazy person to do a hard job. Because a
                             lazy person will find an easy way to do it.
                         </p>
                         <p className="font-montserrat italic">- Bill Gates</p>
                     </div>
-                    <div className="flex-1 px-2 sm:px-8 bg-secondary-light flex items-center">
+                    <div className="flex-1 px-2 sm:px-8 bg-secondary-light text-xs sm:text-base flex items-center">
                         <p className="font-bold text-secondary">
                             SCROLL TO LEARN MORE ABOUT ME
                         </p>
@@ -115,7 +115,7 @@ const Home = () => {
                         alt="graphic"
                     />
                 </div>
-                <div className="flex-1 flex flex-col px-16 py-16 gap-8">
+                <div className="flex-1 flex flex-col p-4 sm:px-16 py-16 gap-8">
                     <h2 className="text-6xl italic font-bold font-montserrat mb-8  ">
                         RELEVANT STUDIES
                     </h2>
@@ -147,7 +147,7 @@ const Home = () => {
                     <div className="flex max-h-fit">
                         <Link
                             to="/education"
-                            className="text-3xl whitespace-nowrap max-h-fit font-black flex flex-col"
+                            className="sm:text-3xl whitespace-nowrap max-h-fit font-black flex flex-col"
                         >
                             <span>Link to="/education"</span>
                             <span>Link to="/education"</span>
