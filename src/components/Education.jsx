@@ -155,7 +155,7 @@ const Education = () => {
                         <h1 className="font-black text-3xl">
                             Noroff, Oslo Campus
                         </h1>
-                        <h2 className="font-black text-6xl lg:text-4xl xl:text-6xl text-primary-light">
+                        <h2 className="font-black text-4xl sm:text-6xl lg:text-4xl xl:text-6xl text-primary-light">
                             Frontend Development
                         </h2>
                         <span className="font-bold text-3xl">2021 - 2023</span>
