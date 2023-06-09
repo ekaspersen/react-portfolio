@@ -89,10 +89,10 @@ const MyWork = () => {
                     </p>
                     <p className="max-w-long-text font-normal text-sm text-secondary-light50op">
                         Site is still under constructon as i have fulfilled exam
-                        criteria and Tetrad is not planned to start up before
-                        after a summer break. Therefore i am finally putting my
-                        portfolio first, soon this site will be live on
-                        tetradmarketing.no
+                        criteria and we have one last assignment (this website).
+                        Therefore i am putting my portfolio first, soon this
+                        site will be done and live on tetradmarketing.no. but
+                        for now we have buildt a temporary website with one.com.
                     </p>
                 </div>
             </section>

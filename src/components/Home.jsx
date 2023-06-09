@@ -4,23 +4,29 @@ import mikaText from "../assets/icouldbebrownicouldebeblue.svg";
 import "./home.css";
 import moreEducationDeets from "../assets/moreeducationdetails.svg";
 import edueducaeducation from "../assets/edueducaeducation.svg";
+import me from "../assets/me.png";
 
 import Contact from "./Contact";
 
 const Home = () => {
     return (
         <div className="home overflow-x-hidden">
-            <section className="h-screen bg-primary flex flex-col justify-between">
+            <section className="h-screen bg-primary flex flex-col justify-between relative ">
+                <img
+                    className="max-w-[240px] absolute bottom-0 right-0"
+                    src={me}
+                    alt=""
+                />
                 <div className="h-[84px]"></div>
                 <h1 className="flex flex-col text-2xl sm:text-3xl lg:text-6xl gap-4 mx-4 sm:mx-8">
-                    <span>Welcome, i am a frontend developer</span>
+                    <span>Frontend developer portfolio</span>
                     <span>
                         i <span className="text-secondary-light"> Design </span>
                         and <span className="text-secondary-light"> code </span>
                         websites.
                     </span>
                 </h1>
-                <div className="w-full flex">
+                <div className="w-full flex z-50">
                     <div className="flex-1 px-2 sm:px-8 gap-1 text-xs sm:text-base flex flex-col text-primary-light">
                         <p className="font-bold opacity-50 max-w-short-text">
                             I choose a lazy person to do a hard job. Because a
@@ -28,7 +34,7 @@ const Home = () => {
                         </p>
                         <p className="font-montserrat italic">- Bill Gates</p>
                     </div>
-                    <div className="flex-1 px-2 sm:px-8 bg-secondary-light text-xs sm:text-base flex items-center">
+                    <div className="flex-1 px-2 sm:px-8 bg-secondary-light  text-xs sm:text-base flex items-center">
                         <p className="font-bold text-secondary">
                             SCROLL TO LEARN MORE ABOUT ME
                         </p>
