@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import EpicSlider from "./EpicSlider";
 import mikaText from "../assets/icouldbebrownicouldebeblue.svg";
-import "./home.css";
 import moreEducationDeets from "../assets/moreeducationdetails.svg";
 import edueducaeducation from "../assets/edueducaeducation.svg";
 import me from "../assets/me.png";
