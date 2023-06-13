@@ -2,7 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+* {
+    box-sizing: border-box;
+}
 @layer components {
     .o-pinpoint {
         position: relative;
