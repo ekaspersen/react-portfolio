@@ -3,7 +3,7 @@ import me from "../assets/me.png";
 import ScrollToTopButton from "./ScrollToTopButton";
 const AboutMe = () => {
     return (
-        <div className="pt-28 flex flex-col justify-center items-center">
+        <div className="pt-28 flex flex-col justify-center items-center max-w-screen overflow-x-hidden">
             <motion.img
                 animate={{ y: 0, opacity: 100 }}
                 initial={{ y: 300, opacity: 0 }}
