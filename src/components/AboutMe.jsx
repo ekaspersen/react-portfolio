@@ -1,8 +1,12 @@
+import { motion } from "framer-motion";
 import me from "../assets/me.png";
 const AboutMe = () => {
     return (
         <div className="pt-28 flex flex-col justify-center items-center">
-            <img
+            <motion.img
+                animate={{ y: 0, opacity: 100 }}
+                initial={{ y: 300, opacity: 0 }}
+                transition={{ duration: 1, delay: 1 }}
                 className="fixed bottom-0 right-0 max-h-60 lg:max-h-80"
                 src={me}
                 alt="image of me"

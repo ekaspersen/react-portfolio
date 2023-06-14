@@ -7,6 +7,7 @@ import MyWork from "./components/MyWork";
 import Nav from "./components/Navigation";
 import AboutMe from "./components/AboutMe";
 import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 const App = () => {
     return (
@@ -20,6 +21,7 @@ const App = () => {
                 <Route path="/education" element={<Education />} />
                 <Route path="/mywork" element={<MyWork />} />
             </Routes>
+            <ScrollToTopButton />
         </Router>
     );
 };
