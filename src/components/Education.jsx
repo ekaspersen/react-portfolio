@@ -1,4 +1,5 @@
 import everyday from "../assets/everydayytyt.svg";
+import ScrollToTopButton from "./ScrollToTopButton";
 const Education = () => {
     return (
         <div className="lg:h-screen">
@@ -394,6 +395,7 @@ const Education = () => {
                     </div>
                 </div>
             </section>
+            <ScrollToTopButton />
         </div>
     );
 };

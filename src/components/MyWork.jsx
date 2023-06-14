@@ -12,6 +12,7 @@ import htmllogo from "../assets/icons/html-logo.svg";
 import csslogo from "../assets/icons/css-logo.svg";
 import jslogo from "../assets/icons/javascript-logo.svg";
 import restapi from "../assets/icons/RestApi.png";
+import ScrollToTopButton from "./ScrollToTopButton";
 const MyWork = () => {
     return (
         <div className="flex flex-col">
@@ -239,6 +240,7 @@ const MyWork = () => {
                     More Content on its way !!!
                 </span>
             </div>
+            <ScrollToTopButton />
         </div>
     );
 };
