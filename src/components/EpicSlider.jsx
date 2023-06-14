@@ -16,7 +16,7 @@ const skills = [
     "Wireframing",
     "Figma",
     "UI-design",
-    "principles of UX",
+    "UX-principles",
 ];
 
 const EpicSlider = () => {
@@ -27,7 +27,7 @@ const EpicSlider = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1000,
         cssEase: "linear",
         variableWidth: true,
     };

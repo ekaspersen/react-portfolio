@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import EpicSlider from "./EpicSlider";
 import mikaText from "../assets/icouldbebrownicouldebeblue.svg";
 import moreEducationDeets from "../assets/moreeducationdetails.svg";
@@ -11,10 +12,13 @@ const Home = () => {
     return (
         <div className="home overflow-x-hidden">
             <section className="h-screen bg-primary flex flex-col justify-between relative ">
-                <img
-                    className="max-w-[240px] absolute bottom-0 right-0"
+                <motion.img
+                    animate={{ y: 0, opacity: 100 }}
+                    initial={{ y: 300, opacity: 0 }}
+                    transition={{ duration: 1, delay: 1 }}
+                    className="max-w-xs w-[49vw] lg:w-full absolute bottom-0 right-0"
                     src={me}
-                    alt=""
+                    alt="image of me"
                 />
                 <div className="h-[84px]"></div>
                 <h1 className="flex flex-col text-2xl sm:text-3xl lg:text-6xl gap-4 mx-4 sm:mx-8">
