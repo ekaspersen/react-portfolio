@@ -5,8 +5,10 @@ import mikaText from "../assets/icouldbebrownicouldebeblue.svg";
 import moreEducationDeets from "../assets/moreeducationdetails.svg";
 import edueducaeducation from "../assets/edueducaeducation.svg";
 import me from "../assets/me.png";
+ScrollToTopButton;
 
 import Contact from "./Contact";
+import ScrollToTopButton from "./ScrollToTopButton";
 
 const Home = () => {
     return (
@@ -174,6 +176,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <ScrollToTopButton />
         </div>
     );
 };

@@ -59,6 +59,7 @@ const AboutMe = () => {
                 </p>
                 <p className="font-bold italic font-montserrat">- Eskil, 22</p>
             </div>
+            <ScrollToTopButton />
         </div>
     );
 };
