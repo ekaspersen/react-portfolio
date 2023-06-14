@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import me from "../assets/me.png";
+import ScrollToTopButton from "./ScrollToTopButton";
 const AboutMe = () => {
     return (
         <div className="pt-28 flex flex-col justify-center items-center">
