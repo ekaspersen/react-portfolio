@@ -33,7 +33,7 @@ const EpicSlider = () => {
     };
 
     return (
-        <div className="overflow-hidden bg-black">
+        <div className="overflow-hidden bg-black cursor-pointer">
             <Slider {...settings}>
                 {skills.map((text, index) => (
                     <div
