@@ -3,6 +3,10 @@ import bidhouseShop from "../assets/bidhouse-landing.png";
 import bidhouseBid from "../assets/bidhouse-newbid.png";
 import bidhousePfp from "../assets/bidhouse-pfp.png";
 import bidhouseSignup from "../assets/bidhouse-signup.png";
+import csm from "../assets/thecsm.png";
+import csmcontact from "../assets/thecsmcontact.png";
+import csmexhibition from "../assets/thecsmexhibitions.png";
+import csminvolved from "../assets/thecsminvolved.png";
 import reactlogo from "../assets/icons/react-logo.svg";
 import firebaselogo from "../assets/icons/firebase-logo.svg";
 import tailwindCSSlogo from "../assets/icons/tailwindCSS-logo.svg";
@@ -51,6 +55,12 @@ const MyWork = () => {
                             src={firebaselogo}
                             alt="firebase logo"
                             title="Firebase"
+                        />
+                        <img
+                            className="max-h-9 hover-restapi"
+                            src={restapi}
+                            alt="REST API"
+                            title="REST API"
                         />
                         <img
                             src={motionlogo}
@@ -223,21 +233,111 @@ const MyWork = () => {
                     </p>
                 </div>
             </section>
-            <div className="py-32 grid place-items-center bg-secondary-light text-primary">
+            <section className="min-h-screen flex flex-col-reverse py-16 gap-8 lg:flex-row-reverse bg-black">
+                <div className="flex-1 min-h-full flex flex-col gap-8 justify-center items-center">
+                    <div className="flex gap-4 flex-wrap px-8 justify-center">
+                        <img src={csslogo} alt="CSS shield" title="CSS" />
+                        <img src={htmllogo} alt="HTML shiled" title="HTML" />
+                    </div>
+                    <div className="gap-4 lg:hidden flex flex-col">
+                        <a
+                            className="block my-2 lg:my-0 py-3 px-8 bg-primary whitespace-nowrap text-secondary-light text-xl font-black"
+                            target="_blank"
+                            href="https://semester-project-e-hagen.netlify.app/"
+                        >
+                            Checkout Website
+                        </a>
+                        <a
+                            className="block my-2 lg:my-0 py-3 px-8 border-primary border-4 whitespace-nowrap text-primary text-xl font-black"
+                            target="_blank"
+                            href="https://www.figma.com/file/fEpntM8GW9Xk97GO9IrG7e/The-CSM?type=design&node-id=0%3A1&mode=design&t=lbpD0Xrk5QvBzJAF-1"
+                        >
+                            Figma
+                        </a>
+                    </div>
+                    <div className="flex max-w-lg lg:max-w-full max-h-[50vh] lg:max-h-[60vh] overflow-x-scroll gap-4 lg:gap-8">
+                        <img
+                            className="lg:py-4"
+                            src={csm}
+                            alt="Gif of website"
+                        />
+                        <img
+                            className="lg:py-4"
+                            src={csmcontact}
+                            alt="Gif of website"
+                        />
+                        <img
+                            className="lg:py-4 "
+                            src={csmexhibition}
+                            alt="Gif of website"
+                        />
+                        <img
+                            className="lg:py-4 w-fit max-w-xs lg:max-w-full"
+                            src={csminvolved}
+                            alt="Gif of website"
+                        />
+                    </div>
+                    <div className="gap-4 hidden lg:flex flex-col items-center">
+                        <a
+                            className="block my-2 lg:my-0 py-3 px-8 bg-primary whitespace-nowrap text-secondary-light text-xl font-black"
+                            target="_blank"
+                            href="https://semester-project-e-hagen.netlify.app/"
+                        >
+                            Checkout Website
+                        </a>
+                        <a
+                            className="block max-w-fit my-2 lg:my-0 py-3 px-8 border-primary border-4 whitespace-nowrap text-primary text-xl font-black"
+                            target="_blank"
+                            href="https://www.figma.com/file/fEpntM8GW9Xk97GO9IrG7e/The-CSM?type=design&node-id=0%3A1&mode=design&t=lbpD0Xrk5QvBzJAF-1"
+                        >
+                            Figma
+                        </a>
+                    </div>
+                </div>
+                <div className="flex-1 min-h-full flex flex-col gap-8 justify-center items-center px-8">
+                    <h2 className="text-5xl font-black font-montserrat italic text-secondary-light w-full max-w-long-text">
+                        The CSM
+                    </h2>
+                    <p className="max-w-long-text">
+                        The community science museum website is the semester
+                        exam for my 1st semester at Noroff.
+                    </p>
+                    <p className="max-w-long-text">
+                        I created it using ONLY vanilla HTML and CSS. This
+                        semester we had learned the basics+ about vanilla HTML
+                        and CSS, UX-principles and how to design a website using
+                        figma.
+                    </p>
+                    <p className="max-w-long-text">
+                        <span className="italic font-montserrat">Brief</span>
+                        <br />
+                        An interactive science museum called the Community
+                        Science Museum is opening in your town/city. Its core
+                        target audience is primary and middle school children
+                        (7-15) and families with young children. The museum
+                        wants a website that is informative and appealing, that
+                        will attract both middle school pupils and their
+                        parents. The site should appeal to youngsters without
+                        pandering; it should take for granted that the audience
+                        is inquisitive and intelligent. The website should be
+                        informative and engaging, but should encourage viewers
+                        to visit the museum itself. The website should be
+                        responsive and be easy to use on a variety of devices.
+                    </p>
+
+                    <p className="max-w-long-text font-black text-sm text-secondary-light50op">
+                        Somehow i have deleted this repository, but all the code
+                        is live on the netlify link! if you want to check it out
+                        just inspect :)
+                    </p>
+                </div>
+            </section>
+            <div className="pt-16 grid place-items-center text-primary">
                 <span className="md:text-xl text-xl font-montserrat italic font-extrabold">
-                    More Content on its way !!!
-                </span>
-                <span className="md:text-3xl text-xl font-montserrat italic font-extrabold mb-4 text-primary-light">
-                    !!! Posting threw the summer
+                    !!! More content on its way
                 </span>
                 <span className="md:text-xl text-xl font-montserrat italic font-extrabold">
-                    More Content on its way !!!
-                </span>
-                <span className="md:text-3xl text-xl font-montserrat italic font-extrabold mb-4 text-primary-light">
-                    !!! Posting threw the summer
-                </span>
-                <span className="md:text-xl text-xl font-montserrat italic font-extrabold">
-                    More Content on its way !!!
+                    Very soon !!!
                 </span>
             </div>
             <ScrollToTopButton />
