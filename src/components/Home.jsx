@@ -24,11 +24,16 @@ const Home = () => {
                 />
                 <div className="h-[84px]"></div>
                 <h1 className="flex flex-col text-2xl sm:text-3xl lg:text-6xl gap-4 mx-4 sm:mx-8">
-                    <span>Frontend developer portfolio</span>
+                    <span className="italic font-montserrat">
+                        Frontend developer
+                    </span>
                     <span>
                         i <span className="text-secondary-light"> Design </span>
                         and <span className="text-secondary-light"> code </span>
                         websites.
+                    </span>
+                    <span className="text-sm italic font-montserrat">
+                        Welcome to my portfolio
                     </span>
                 </h1>
                 <div className="w-full flex z-50">
