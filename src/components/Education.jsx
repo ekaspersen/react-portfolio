@@ -250,9 +250,9 @@ const Education = () => {
                 </div>
             </section>
 
-            <section className="w-full flex flex-col lg:flex-row-reverse">
-                <div className="flex-1 flex flex-col lg:flex-col-reverse">
-                    <div className="flex lg:hidden flex-col px-4 lg:px-8 py-12 xl:px-16 xl:py-24">
+            <section className="w-full flex flex-col lg:flex-row">
+                <div className="flex-1 flex flex-col gap-16 px-4 lg:px-8 py-12 xl:px-16 xl:py-24">
+                    <div className="flex flex-col ">
                         <span className="text-3xl text-secondary-light font-bold">
                             Bodø Videregående Skole
                         </span>
@@ -263,20 +263,9 @@ const Education = () => {
                             2020 - 2021
                         </span>
                     </div>
-                    <div className="lg:flex mt-auto lg:bg-primary hidden flex-col px-4 py-12 lg:px-8 xl:px-16 xl:py-24">
-                        <span className="text-3xl text-primary-light font-bold">
-                            Bodin Videregående Skole
-                        </span>
-                        <span className="text-secondary-light text-4xl sm:text-5xl font-black">
-                            IT1 - Programfag
-                        </span>
-                        <span className="text-xl text-white font-bold">
-                            2020 - 2021
-                        </span>
-                    </div>
                     <div
                         id="bodovgs"
-                        className="md:max-w-long-text lg:max-w-none scroll-m-72 lg:scroll-m-12 flex flex-col h-full px-4 py-8 gap-8 lg:px-8 lg:py-16 xl:px-16 xl:py-24"
+                        className="md:max-w-long-text lg:max-w-none scroll-m-72 lg:scroll-m-12 flex flex-col h-full gap-8"
                     >
                         <p>
                             My last year at high-school i did common studies
@@ -302,36 +291,18 @@ const Education = () => {
                             new stuff alongside refreshing things that was
                             unclear or forgotten from the last year!
                         </p>
-                        <p className="text-2xl text-primary-light mt-8 h-full flex flex-col justify-between">
-                            <span>
-                                The most important qualities i got from studying
-                                IT in high-school (Learning to code was also
-                                good) must be knowledge of how the backend of
-                                everything works. Even though it is not my
-                                field, i think it is very helpful for both me
-                                and piers if developers can discuss things
-                                together -
-                            </span>
-
-                            <li className="custom-bullet font-black text-6xl">
-                                From Design to back to Front end.
-                            </li>
+                        <p className="font-bold text-primary-light">
+                            Reflecting on my last year at high school, the IT
+                            extracurricular was a highlight. It strengthened my
+                            foundational skills and fueled my passion for
+                            technology and web development. The lessons and
+                            experiences from that year remain invaluable as I
+                            step into the future.
                         </p>
                     </div>
                 </div>
-                <div className="flex-1 h-full flex flex-col bg-primary lg:bg-transparent">
-                    <div className="lg:flex hidden flex-col px-4 lg:px-8 py-12 xl:px-16 xl:py-24">
-                        <span className="text-3xl text-secondary-light font-bold">
-                            Bodø Videregående Skole
-                        </span>
-                        <span className="text-primary-light text-5xl font-black">
-                            IT1 - Programfag
-                        </span>
-                        <span className="text-xl text-white font-bold">
-                            2020 - 2021
-                        </span>
-                    </div>
-                    <div className="flex lg:hidden flex-col px-4 py-12 lg:px-8 xl:px-16 xl:py-24">
+                <div className="flex-1 h-full flex flex-col bg-primary gap-16 px-4 py-12 lg:px-8 xl:px-16 xl:py-24">
+                    <div className="lg:flex hidden flex-col ">
                         <span className="text-3xl  text-primary-light font-bold">
                             Bodin Videregående Skole
                         </span>
@@ -344,7 +315,7 @@ const Education = () => {
                     </div>
                     <div
                         id="bodinvgs"
-                        className="md:max-w-long-text lg:max-w-none flex scroll-m-80 lg:scroll-m-[-20000px] bg-primary font-medium flex-col px-4 py-8 gap-8 lg:px-8 lg:py-16 xl:px-16 xl:py-24"
+                        className="md:max-w-long-text lg:max-w-none flex scroll-m-80 lg:scroll-m-[-20000px] bg-primary font-medium flex-col gap-8"
                     >
                         <p className="font-bold text-secondary-light50op">
                             The start of my developer/IT career was deeply
@@ -356,41 +327,40 @@ const Education = () => {
                             were plentiful.
                         </p>
                         <p>
-                            Our studies involved learning how the w3 is put
-                            together, what/how LANs and WANs are and work, how
-                            to set up routing for LAN servers, protocols and
-                            generally how everything is set up from bits to
-                            protocols to servers talking to send code that in
-                            the end tells the screen what rgb value the pixels
-                            should fire.
+                            We explored the foundations of the web,
+                            understanding the structure of the W3, the workings
+                            of LANs and WANs, and the intricacies of server
+                            routing. We delved into protocols and learned how
+                            data communication is established, from bits to
+                            server interactions.
                         </p>
                         <p>
                             This year was my first meeting with HTML and CSS. It
                             was a steep learning curve, but i found a passion
                             for CSS and i had a very good understanding of
-                            bending the box model by the time the year was over.
-                            We also dabbled a bit with javaScript, nothing much
-                            but i made a very simple cookie-clicker type game
-                            and a Celsius/Fahrenheit/kelvin translator just to
-                            get familiarised with programming.
+                            bending the box model by the time christmas was
+                            around. We also dabbled a bit with javaScript,
+                            nothing much but i made a very simple cookie-clicker
+                            type game and a Celsius/Fahrenheit/kelvin translator
+                            just to get familiarised with programming.
                         </p>
                         <p>
-                            Delving deeper into the world of back-end
-                            development, we dedicated significant time of the
-                            year learning about and creating databases with
-                            PHP/MySQL. First we learned simple programming
-                            foundations like var., arrays, loops and other logic
-                            to get started. then wee created a couple CRUD
-                            applications on our local networks.
+                            Our back-end development journey had us delving into
+                            PHP/MySQL. we began learning programming foundations
+                            like variables, arrays, loops and other logic to get
+                            started. then wee created a couple websites using
+                            data from databases we created on servers on or own
+                            LAN(Local Area Network), that we also connected with
+                            eth-cables.
                         </p>
                         <p className="font-bold text-xl text-secondary-light">
-                            My time at Bodin vgs. set the groundwork for my
-                            career and gave me a strong foundation as a
-                            developer. My teacher was a big inspiration to me
-                            with his light hearted yet very disciplined take on
-                            teaching. We got to look into how it is to work in
-                            every IT field and it lead me down the road i’m on
-                            today, feeling confident about my path onwards.
+                            Bodin vgs. was pivotal in shaping my developer
+                            career. My teacher, with his unique blend of humor
+                            and discipline, was a constant source of
+                            inspiration. This experience provided a
+                            comprehensive overview of the IT sector, guiding me
+                            to my current path with confidence and clarity about
+                            my future.
                         </p>
                     </div>
                 </div>

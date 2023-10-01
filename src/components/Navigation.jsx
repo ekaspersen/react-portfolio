@@ -132,15 +132,6 @@ const Nav = () => {
                     <motion.li variants={listItemVariant}>
                         <Link
                             onClick={toggleMenu} // Add this line
-                            to="/services"
-                            className="block my-2 lg:my-0 py-2 px-6 bg-primary whitespace-nowrap text-primary-light font-black"
-                        >
-                            Services
-                        </Link>
-                    </motion.li>
-                    <motion.li variants={listItemVariant}>
-                        <Link
-                            onClick={toggleMenu} // Add this line
                             to="/contact"
                             className="block my-2 lg:my-0 py-2 px-6 bg-primary whitespace-nowrap text-primary-light font-black"
                         >
