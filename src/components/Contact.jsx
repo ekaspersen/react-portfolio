@@ -38,7 +38,7 @@ const EmailBox = () => {
                 </span>
                 <span className="font-bold text-xs">
                     CLICK THIS BOX TO COPY EMAIL ADDRESS <br /> I FIND EMAIL
-                    POP-UPS ANNOYING TO
+                    POP-UPS ANNOYING TOO
                 </span>
             </div>
             {showModal && (

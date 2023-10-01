@@ -332,14 +332,6 @@ const MyWork = () => {
                     </p>
                 </div>
             </section>
-            <div className="pt-16 grid place-items-center text-primary">
-                <span className="md:text-xl text-xl font-montserrat italic font-extrabold">
-                    !!! More content on its way
-                </span>
-                <span className="md:text-xl text-xl font-montserrat italic font-extrabold">
-                    Very soon !!!
-                </span>
-            </div>
             <ScrollToTopButton />
         </div>
     );

@@ -21,7 +21,7 @@ const ScrollToTopButton = () => {
     }, []);
 
     return (
-        <div className="">
+        <div className="bg-black">
             {isVisible && (
                 <div
                     onClick={scrollToTop}
