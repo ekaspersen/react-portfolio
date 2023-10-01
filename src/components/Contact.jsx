@@ -66,8 +66,8 @@ const Contact = () => {
                             LinkedIn
                         </span>
                         <span className="font-bold text-xs">
-                            CLICK THIS BOX TO REDIRECT TO MY <br /> I LINKEDIN
-                            IN A NEW TAB
+                            CLICK THIS BOX TO REDIRECT TO MY <br /> LINKEDIN IN
+                            A NEW TAB
                         </span>
                     </div>
                 </a>

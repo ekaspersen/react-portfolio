@@ -1,18 +1,20 @@
 import { motion } from "framer-motion";
 import me from "../assets/me.png";
 import ScrollToTopButton from "./ScrollToTopButton";
+import CoolLines from "./CoolLines";
 const AboutMe = () => {
     return (
-        <div className="pt-28 flex flex-col justify-center items-center max-w-screen overflow-x-hidden">
+        <div className="pt-28 flex flex-col justify-center items-center max-w-screen relative overflow-hidden">
+            <CoolLines />
             <motion.img
                 animate={{ y: 0, opacity: 100 }}
                 initial={{ y: 300, opacity: 0 }}
                 transition={{ duration: 1, delay: 1 }}
-                className="fixed bottom-0 right-0 max-h-60 lg:max-h-80"
+                className="fixed bottom-0 right-0 max-h-60 lg:max-h-80 z-20"
                 src={me}
                 alt="image of me"
             />
-            <div className="flex flex-col justify-between px-8 pb-16 pt-32 bg-secondary-light ">
+            <div className=" z-10 flex flex-col justify-between px-8 pb-16 pt-32 bg-secondary-light ">
                 <div className="flex flex-col text-primary">
                     <span className="text-7xl pb-3 font-bold text-primary-light">
                         OSL<span className="o-pinpoint">O</span>, NORWAY
@@ -24,15 +26,16 @@ const AboutMe = () => {
                     <span className="font-bold">22 YEARS YOUNG</span>
                 </div>
             </div>
-            <div className="flex flex-col justify-between px-8 pb-16 mb-48 xl:mb-32 pt-8 gap-4 bg-primary max-w-3xl text-secondary-light">
-                <h1 className="font-black text-5xl mb-4">About Me</h1>
-                <p className="font-bold text-secondary-light50op text-lg">
-                    Hello there! My name is Eskil K. Hagen and i am a Frontend
-                    Developer and User Interface Designer. This means i am
-                    capable of getting a website up and running for a client by
-                    myself from the brief to the website is done. But altough i
-                    can, i love having some company when i am designing or
-                    developing.
+            <div className=" z-10 flex flex-col justify-between px-8 py-16 gap-4 bg-primary max-w-3xl text-secondary-light50op">
+                <h1 className="font-black text-5xl mb-4 text-secondary-light">
+                    About Me
+                </h1>
+                <p className="font-bold  text-lg">
+                    Hello there! My name is Eskil K. Hagen and I'm a Frontend
+                    Developer and User Interface Designer. This means i can do
+                    the entire process from creating the design to coding the
+                    website and its deployment. But altough i can, i love having
+                    some company when i am designing or developing.
                 </p>
                 <p className="font-medium">
                     I'm a dedicated Frontend developer, my favourite language to
@@ -58,7 +61,9 @@ const AboutMe = () => {
                     me with fresh perspectives that I believe also benefit my
                     work.
                 </p>
-                <p className="font-bold italic font-montserrat">- Eskil, 22</p>
+                <p className="font-bold italic font-montserrat text-secondary-light">
+                    - Eskil, 22
+                </p>
             </div>
             <ScrollToTopButton />
         </div>

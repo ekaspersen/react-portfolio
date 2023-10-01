@@ -22,19 +22,19 @@ const MyWork = () => {
         <div className="flex flex-col">
             <div className="w-full bg-secondary-light h-24"></div>
             <div className="flex ">
-                <div className="flex-1 min-h-full bg-secondary-light"></div>
                 <div className="flex flex-col px-8 py-16 gap-8 bg-primary text-secondary-light">
                     <h1 className="text-5xl font-black">My Work</h1>
                     <p className="text-3xl font-medium max-w-long-text">
-                        Here is a collection of my favourite projects and tasks
-                        done so far
+                        Here's a collection of some of the best websites i've
+                        created so far.
                     </p>
                     <p className="max-w-long-text">
-                        I will be updating this page over the next couple of
-                        weeks to create and sort the content for it, stay
-                        updated!
+                        all projects on this page are full applications planned,
+                        designed and buildt by me. Working on a couple real
+                        client projects that will be live soon!
                     </p>
                 </div>
+                <div className="flex-1 min-h-full bg-secondary-light min-w-[32px]"></div>
             </div>
             <section className="min-h-screen flex flex-col-reverse py-16 gap-8 lg:flex-row bg-black">
                 <div className="flex-1 min-h-full flex flex-col gap-8 justify-center items-center">
@@ -227,6 +227,9 @@ const MyWork = () => {
                     <p className="max-w-long-text font-black text-sm text-secondary-light50op">
                         Site is not currently depolyed <br /> Please checkout
                         Figma(design&planning) and/or github to see my website.
+                        Every frame you see in the Figma was up and functional,
+                        but due to changes in the Noroff-API it is not running
+                        anymore.
                     </p>
                 </div>
             </section>
@@ -245,7 +248,7 @@ const MyWork = () => {
                             Checkout Website
                         </a>
                         <a
-                            className="block my-2 lg:my-0 py-3 px-8 border-primary border-4 whitespace-nowrap text-primary text-xl font-black"
+                            className="block max-w-fit my-2 lg:my-0 py-3 px-8 mx-auto border-primary border-4 whitespace-nowrap text-primary text-xl font-black"
                             target="_blank"
                             href="https://www.figma.com/file/fEpntM8GW9Xk97GO9IrG7e/The-CSM?type=design&node-id=0%3A1&mode=design&t=lbpD0Xrk5QvBzJAF-1"
                         >

@@ -250,7 +250,7 @@ const Education = () => {
                 </div>
             </section>
 
-            <section className="w-full flex flex-col lg:flex-row">
+            <section className="w-full flex flex-col lg:flex-row-reverse">
                 <div className="flex-1 flex flex-col gap-16 px-4 lg:px-8 py-12 xl:px-16 xl:py-24">
                     <div className="flex flex-col ">
                         <span className="text-3xl text-secondary-light font-bold">
@@ -302,7 +302,7 @@ const Education = () => {
                     </div>
                 </div>
                 <div className="flex-1 h-full flex flex-col bg-primary gap-16 px-4 py-12 lg:px-8 xl:px-16 xl:py-24">
-                    <div className="lg:flex hidden flex-col ">
+                    <div className="flex flex-col ">
                         <span className="text-3xl  text-primary-light font-bold">
                             Bodin Videregående Skole
                         </span>
