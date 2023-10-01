@@ -8,7 +8,7 @@ module.exports = {
             },
             fontFamily: {
                 inter: ["Inter", "sans-serif"],
-                montserrat: ["Montserrat", "serif"],
+                montserrat: ["Montserrat", "sans-serif"],
             },
             fontSize: {
                 "3xl": ["32px", "1.25"],
