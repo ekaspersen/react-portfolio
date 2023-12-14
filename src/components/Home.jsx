@@ -25,7 +25,7 @@ const Home = () => {
                     alt="image of me"
                 />
                 <h1 className="flex flex-col text-2xl sm:text-3xl lg:text-6xl mt-32 md:mt-0 md:gap-4 mx-4 sm:mx-8 z-40">
-                    <span className="italic font-montserrat text-primary font-bold">
+                    <span className="italic font-montserrat font-bold">
                         Frontend developer
                     </span>
                     <span>
@@ -33,7 +33,7 @@ const Home = () => {
                         and <span className="text-secondary-light"> code </span>
                         websites.
                     </span>
-                    <span className="text-sm italic text-primary-light font-montserrat">
+                    <span className="text-sm italic font-montserrat">
                         Welcome to my portfolio
                     </span>
                 </h1>
