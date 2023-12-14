@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 const EmailBox = () => {
     const [showModal, setShowModal] = useState(false);
-    const email = "ekhatwork@gmail.com";
+    const email = "eskilkasp@gmail.com";
 
     const copyToClipboard = async () => {
         try {
