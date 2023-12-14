@@ -14,7 +14,7 @@ import CoolLines from "./CoolLines";
 const Home = () => {
     return (
         <div className="home overflow-x-hidden">
-            <section className="h-screen bg-primare flex flex-col justify-between relative overflow-hidden">
+            <section className="h-screen bg-white flex flex-col justify-between relative overflow-hidden">
                 <CoolLines />
                 <motion.img
                     animate={{ y: 0, opacity: 100 }}
@@ -33,7 +33,7 @@ const Home = () => {
                         and <span className="text-secondary-light"> code </span>
                         websites.
                     </span>
-                    <span className="text-sm italic font-montserrat">
+                    <span className="text-sm italic text-primary-light font-montserrat">
                         Welcome to my portfolio
                     </span>
                 </h1>
