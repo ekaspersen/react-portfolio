@@ -14,19 +14,18 @@ import CoolLines from "./CoolLines";
 const Home = () => {
     return (
         <div className="home overflow-x-hidden">
-            <section className="h-screen bg-primary flex flex-col justify-between relative overflow-hidden">
+            <section className="h-screen bg-gradient-to-r from-primary-light to-primary flex flex-col justify-between relative overflow-hidden">
                 <CoolLines />
                 <motion.img
                     animate={{ y: 0, opacity: 100 }}
                     initial={{ y: 300, opacity: 0 }}
                     transition={{ duration: 1, delay: 1 }}
-                    className="max-w-xs w-[49vw] lg:w-full absolute bottom-0 right-0 z-50"
+                    className="max-w-xs w-[49vw] lg:w-full absolute bottom-0 right-0 z-40"
                     src={me}
                     alt="image of me"
                 />
-                <div className="h-[84px]"></div>
-                <h1 className="flex flex-col text-2xl sm:text-3xl lg:text-6xl gap-4 mx-4 sm:mx-8 z-50">
-                    <span className="italic font-montserrat">
+                <h1 className="flex flex-col text-2xl sm:text-3xl lg:text-6xl mt-32 md:mt-0 md:gap-4 mx-4 sm:mx-8 z-40">
+                    <span className="italic font-montserrat text-primary font-bold">
                         Frontend developer
                     </span>
                     <span>
@@ -38,13 +37,12 @@ const Home = () => {
                         Welcome to my portfolio
                     </span>
                 </h1>
-                <div className="w-full flex z-50">
-                    <div className="flex-1 px-2 sm:px-8 gap-1 text-xs sm:text-base flex flex-col text-primary-light">
+                <div className="w-full flex z-40">
+                    <div className="flex-1 px-2 sm:px-8 gap-1 text-xs sm:text-base text-secondary">
                         <p className="font-bold opacity-50 max-w-short-text">
-                            I choose a lazy person to do a hard job. Because a
-                            lazy person will find an easy way to do it.
+                            A Frontend developer and UX designer with a passion
+                            for great user experience and clean code.
                         </p>
-                        <p className="font-montserrat italic">- Bill Gates</p>
                     </div>
                     <div className="flex-1 px-2 sm:px-8 bg-secondary-light  text-xs sm:text-base flex items-center">
                         <p className="font-bold text-secondary">

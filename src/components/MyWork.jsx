@@ -17,6 +17,7 @@ import csslogo from "../assets/icons/css-logo.svg";
 import jslogo from "../assets/icons/javascript-logo.svg";
 import restapi from "../assets/icons/RestApi.png";
 import ScrollToTopButton from "./ScrollToTopButton";
+import ctfHero from "../assets/ctfHomePageHero.jpg";
 const MyWork = () => {
     return (
         <div className="flex flex-col">
@@ -36,6 +37,91 @@ const MyWork = () => {
                 </div>
                 <div className="flex-1 min-h-full bg-secondary-light min-w-[32px]"></div>
             </div>
+            {/*
+            <section className="min-h-screen flex flex-col-reverse py-16 gap-8 lg:flex-row bg-black">
+                <div className="flex-1 min-h-full flex flex-col gap-8 justify-center items-center">
+                    <div className="flex gap-4 flex-wrap px-8 justify-center">
+                        <img src={reactlogo} alt="react logo" title="ReactJs" />
+                        <img
+                            src={tailwindCSSlogo}
+                            alt="tailwindCSS logo"
+                            title="tailwindCSS"
+                        />
+                        <img src={htmllogo} alt="HTML shiled" title="HTML" />
+                        <img src={csslogo} alt="CSS shield" title="CSS" />
+                        <img src={jslogo} alt="JS shield" title="javaScript" />
+                        <img
+                            src={firebaselogo}
+                            alt="firebase logo"
+                            title="Firebase"
+                        />
+                        <img
+                            className="max-h-9 hover-restapi"
+                            src={restapi}
+                            alt="REST API"
+                            title="REST API"
+                        />
+                        <img
+                            src={motionlogo}
+                            alt="framer motion logo"
+                            title="Framer Motion"
+                        />
+                        <img src={vitelogo} alt="Vite Js logo" title="ViteJs" />
+                    </div>
+                    <img
+                        className="max-w-full w-11/12 md:w-auto mx-4 border-8 rounded-2xl border-primary-light"
+                        src={tetradMGif}
+                        alt="Gif of website"
+                    />
+                    <a
+                        className="block my-2 lg:my-0 py-3 px-8 bg-primary whitespace-nowrap text-secondary-light text-xl font-black"
+                        target="_blank"
+                        href="https://tetrad-marketing-react.vercel.app/"
+                    >
+                        Checkout website
+                    </a>
+
+                    <div className="flex gap-4">
+                        <a
+                            className="block my-2 lg:my-0 py-3 px-8 border-primary border-4 whitespace-nowrap text-primary text-xl font-black"
+                            target="_blank"
+                            href="https://github.com/ekaspersen/tetrad-marketing-react"
+                        >
+                            GitHub
+                        </a>
+                        <a
+                            className="block my-2 lg:my-0 py-3 px-8 border-primary border-4 whitespace-nowrap text-primary text-xl font-black"
+                            target="_blank"
+                            href="https://www.figma.com/file/uTf5RJkqPVaObfhWZplAVn/Tetrad-display-Figma?type=design&node-id=0%3A1&t=nlEYfYVNvekXC6sv-1"
+                        >
+                            Figma
+                        </a>
+                    </div>
+                </div>
+                <div className="flex-1 min-h-full flex flex-col gap-8 justify-center items-center px-8">
+                    <h2 className="text-5xl font-black font-montserrat italic text-secondary-light w-full max-w-long-text">
+                        CATCH THE FOX
+                    </h2>
+                    <p className="max-w-long-text">
+                        I am currently working on the homepage for the
+                        upincoming band{" "}
+                        <span className="font-montserrat italic">
+                            " Catch the fox ".
+                        </span>
+                    </p>
+                    <p className="max-w-long-text">
+                        This is a NextJS project utilising Supabase as a
+                    </p>
+                    <p className="max-w-long-text font-normal text-sm text-secondary-light50op">
+                        Site is still under constructon as i have fulfilled exam
+                        criteria and we have one last assignment (this website).
+                        Therefore i am putting my portfolio first, soon this
+                        site will be done and live on tetradmarketing.no. but
+                        for now we have buildt a temporary website with one.com.
+                    </p>
+                </div>
+            </section>
+            */}
             <section className="min-h-screen flex flex-col-reverse py-16 gap-8 lg:flex-row bg-black">
                 <div className="flex-1 min-h-full flex flex-col gap-8 justify-center items-center">
                     <div className="flex gap-4 flex-wrap px-8 justify-center">
@@ -101,27 +187,44 @@ const MyWork = () => {
                         Tetrad Marketing
                     </h2>
                     <p className="max-w-long-text">
-                        Tetrad Marketing is my student company. I was lucky to
+                        Tetrad Marketing was my student company. I was lucky to
                         get to use our website as my final exam. It is a
                         ReactJs/Vite project that uses Firebase/Auth for User
                         authentication to the Admin panel, and Firestore to
                         create an API for blogposts and of course display them
-                        on the site..
+                        on the site.
+                    </p>
+                    <p className="max-w-long-text">
+                        I learned a lot from having a student company with four
+                        marketing students. The most important thing i got from
+                        it is probably the knowledge of how to start a business,
+                        communicating with partners and i also learned a lot
+                        about marketing like adds, google business and honed in
+                        my SEO skills and got a client page to rank 3. in a
+                        verry competetive restaurant area in Oslo.
                     </p>
                     <p className="max-w-long-text">
                         It was a fun project to work on, i created the logo,
                         brief, design, code and deployed this website by myself
                     </p>
-                    <p className="max-w-long-text font-normal text-sm text-secondary-light50op">
-                        Site is still under constructon as i have fulfilled exam
-                        criteria and we have one last assignment (this website).
-                        Therefore i am putting my portfolio first, soon this
-                        site will be done and live on tetradmarketing.no. but
-                        for now we have buildt a temporary website with one.com.
+                    <p className="max-w-long-text">
+                        If you want to checkout the page for the restaurant i
+                        created i'll leave a link here. This initial design
+                        served as a foundation because they needed something
+                        asap and we did not want to loose the client. with plans
+                        for an advanced redesign that were not finalized due to
+                        pending negotiations.
+                        <br />
+                        <a
+                            className="underline text-secondary-light py-1"
+                            href="https://panorama-nu.vercel.app/"
+                            target="blank"
+                        >
+                            Link to website
+                        </a>
                     </p>
                 </div>
             </section>
-
             <section className="min-h-screen flex flex-col-reverse py-16 gap-8 lg:flex-row-reverse bg-primary">
                 <div className="flex-1 min-h-full flex flex-col gap-8 justify-center items-center">
                     <div className="flex gap-4 flex-wrap px-8 justify-center">

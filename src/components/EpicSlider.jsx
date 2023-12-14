@@ -1,30 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
 
-const skills = [
-    "HTML",
-    "SEO practices",
-    "CSS",
-    "javaScript",
-    "ReactJS",
-    "API / RestAPI",
-    "Responsive design",
-    "TailwindCSS",
-    "Wireframing",
-    "UI design",
-    "UX principles",
-    "Figma",
-    "npm / yarn",
-    "CRUD tables",
-    "Firebase",
-    "Git",
-    "Branching",
-    "Headless CMS (WP, Strapi)",
-    "NodeJs",
-    "PhpMySQL",
-    "CSS/JS animations",
-    "DB structure",
-];
+import { skills } from "./skills";
+import SkillsModal from "./SkillsModal";
 
 const EpicSlider = () => {
     const settings = {
@@ -40,17 +18,18 @@ const EpicSlider = () => {
     };
 
     return (
-        <div className="overflow-hidden bg-secondary cursor-default">
+        <div className="overflow-hidden bg-secondary cursor-default relative py-16">
             <Slider {...settings}>
                 {skills.map((text, index) => (
                     <div
                         key={index}
-                        className="mx-8 my-8 font-black text-5xl xl:mx-16 text-primary-light xl:text-8xl whitespace-nowrap"
+                        className=" font-black text-5xl text-primary-light xl:text-8xl mx-4 md:mx-8 py-2 whitespace-nowrap"
                     >
-                        {text}
+                        {text.name}
                     </div>
                 ))}
             </Slider>
+            <SkillsModal />
         </div>
     );
 };
