@@ -14,7 +14,7 @@ import CoolLines from "./CoolLines";
 const Home = () => {
     return (
         <div className="home overflow-x-hidden">
-            <section className="h-screen bg-gradient-to-r from-primary-light to-primary flex flex-col justify-between relative overflow-hidden">
+            <section className="h-screen bg-primare flex flex-col justify-between relative overflow-hidden">
                 <CoolLines />
                 <motion.img
                     animate={{ y: 0, opacity: 100 }}
