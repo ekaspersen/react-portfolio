@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import me from "../assets/me.png";
 import ScrollToTopButton from "./ScrollToTopButton";
 import CoolLines from "./CoolLines";
+import SkillsModal from "./SkillsModal";
 const AboutMe = () => {
     return (
         <div className="pt-28 flex flex-col justify-center items-center max-w-screen relative overflow-hidden">
@@ -26,34 +27,40 @@ const AboutMe = () => {
                     <span className="font-bold">22 YEARS YOUNG</span>
                 </div>
             </div>
-            <div className=" z-10 flex flex-col justify-between px-8 py-16 gap-4 bg-primary max-w-3xl text-secondary-light50op">
+            <div className="z-10 flex flex-col justify-between px-8 relative py-16 gap-4 bg-primary max-w-3xl text-secondary-light50op">
                 <h1 className="font-black text-5xl mb-4 text-secondary-light">
                     About Me
                 </h1>
+
                 <p className="font-bold  text-lg">
                     Hello there! My name is Eskil K. Hagen and I'm a Frontend
                     Developer and User Interface Designer. This means i can do
                     the entire process from creating the design to coding the
-                    website and its deployment. But altough i can, i love having
-                    some company when i am designing or developing.
+                    website and its deployment.
                 </p>
                 <p className="font-medium">
-                    I'm a dedicated Frontend developer, my favourite language to
-                    work with being CSS, with emmet on my side i speak
-                    css/tailwind fluently. In my work, I aim to build websites
-                    that are both attractive and user-friendly. My educational
-                    journey provided me with a solid grasp of coding rules and
-                    UX (user experience) principles. I'm always on the lookout
-                    for new learnings, taking steps every day to enhance my
-                    skills and stay at the forefront of my field.
+                    With a Solid background in CSS i can make any design come to
+                    life on the web. Whether it is CSS, SASS, TailwindCSS or
+                    Bootstrap i can make it mobile responsive, animated and
+                    optimised. I am very design oriented so i love creating both
+                    the User interface and make it come to live with CSS.
                 </p>
                 <p className="font-medium">
-                    Collaborating with team members is one of the aspects I
-                    enjoy most about what I do. I've found that I can often help
-                    to keep the team spirit high with my outgoing personality,
-                    and I believe that a happy, motivated team is key to good
-                    workflow.
+                    I've learned the basics of programming through a bit of php
+                    and JS at high-school and only JS and NodeJS in the last
+                    couple of years at Noroff. In the last two years I've also
+                    started using React- and Next -JS for my applications. I
+                    also handle API integrations and have some knowledge of SQL
+                    and database/table management. This means I can smoothly
+                    connect the front-end of websites with various back-end
+                    systems, making sure everything works together seamlessly.{" "}
+                    <span className=" font-montserrat italic">
+                        For example i've used supabase and firebase to create
+                        and manage storage and auth for a couple
+                        web-applications.
+                    </span>
                 </p>
+
                 <p className="font-medium">
                     Away from my professional life, I value the time spent with
                     friends and engaging in various activities. These
@@ -61,9 +68,17 @@ const AboutMe = () => {
                     me with fresh perspectives that I believe also benefit my
                     work.
                 </p>
+                <p className="font-medium">
+                    My educational journey has given me a solid foundation in
+                    coding standards, UX principles, and the latest JavaScript
+                    frameworks and libraries. I'm committed to continuous
+                    learning, always seeking new knowledge and techniques to
+                    stay updated in the fast-paced world of web development.
+                </p>
                 <p className="font-bold italic font-montserrat text-secondary-light">
                     - Eskil, 22
                 </p>
+                <SkillsModal />
             </div>
             <ScrollToTopButton />
         </div>
