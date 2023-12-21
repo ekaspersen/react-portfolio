@@ -25,8 +25,8 @@ const Home = () => {
                     alt="image of me"
                 />
                 <h1 className="flex flex-col text-2xl sm:text-3xl lg:text-6xl mt-32 md:mt-0 md:gap-4 mx-4 sm:mx-8 z-40">
-                    <span className="italic font-montserrat text-primary font-bold">
-                        Frontend developer
+                    <span className="italic font-montserrat text-primary-light font-bold">
+                        Welcome to my portfolio
                     </span>
                     <span>
                         i <span className="text-secondary-light"> Design </span>
@@ -34,11 +34,11 @@ const Home = () => {
                         websites.
                     </span>
                     <span className="text-sm italic font-montserrat">
-                        Welcome to my portfolio
+                        - Eskil K. Hagen, Frontend Developer
                     </span>
                 </h1>
                 <div className="w-full flex z-40">
-                    <div className="flex-1 px-2 sm:px-8 gap-1 text-xs sm:text-base text-secondary">
+                    <div className="flex-1 px-2 sm:px-8 gap-1 text-xs sm:text-base text-secondary-light">
                         <p className="font-bold opacity-50 max-w-short-text">
                             A Frontend developer and UX designer with a passion
                             for great user experience and clean code.
