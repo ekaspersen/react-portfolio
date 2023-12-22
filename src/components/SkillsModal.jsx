@@ -12,7 +12,7 @@ const SkillsModal = () => {
                 onClick={toggleModal}
                 className="underline underline-offset-4 text-secondary-light px-8 py-4 absolute bottom-0 left-0"
             >
-                View all skills as List
+                View my skills as a list
             </button>
 
             {showModal && (
