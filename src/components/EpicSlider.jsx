@@ -1,49 +1,35 @@
 import React from "react";
 import Slider from "react-slick";
 
-const skills = [
-    "HTML&SEO",
-    "CSS",
-    "SASS/SCSS",
-    "TailwindCSS",
-    "javaScript",
-    "ReactJs",
-    "API handling",
-    "C.R.U.D.stuff",
-    "Git",
-    "npm",
-    "Branching",
-    "Wireframing",
-    "Figma",
-    "UI-design",
-    "UX-principles",
-];
+import { skills } from "./skills";
+import SkillsModal from "./SkillsModal";
 
 const EpicSlider = () => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 500,
+        speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000,
         cssEase: "linear",
         variableWidth: true,
     };
 
     return (
-        <div className="overflow-hidden bg-black cursor-pointer">
+        <div className="overflow-hidden bg-secondary cursor-default relative py-16">
             <Slider {...settings}>
                 {skills.map((text, index) => (
                     <div
                         key={index}
-                        className="mx-8 my-8 text-5xl xl:mx-16 text-white xl:text-8xl whitespace-nowrap"
+                        className=" font-black text-5xl text-primary-light xl:text-8xl mx-4 md:mx-8 py-2 whitespace-nowrap"
                     >
-                        {text}
+                        {text.name}
                     </div>
                 ))}
             </Slider>
+            <SkillsModal />
         </div>
     );
 };

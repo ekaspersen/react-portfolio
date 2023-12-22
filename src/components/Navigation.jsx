@@ -65,7 +65,7 @@ const Nav = () => {
     const animationState = isLgOrAbove ? "open" : isOpen ? "open" : "closed";
 
     return (
-        <header className="header-index fixed top-0 flex left-0 right-0 justify-between items-center p-4 bg-secondary">
+        <header className="header-index fixed top-0 flex left-0 right-0 justify-between items-center p-4 bg-secondary text-xl lg:text-base">
             <Link to="/" className="max-h-full">
                 <img src={logo} alt="Logo" />
             </Link>
@@ -106,7 +106,7 @@ const Nav = () => {
                         <Link
                             onClick={toggleMenu} // Add this line
                             to="/mywork"
-                            className="block my-2 lg:my-0 py-3 px-8 bg-primary whitespace-nowrap text-primary-light text-xl font-black"
+                            className="block my-2 lg:my-0 py-2 px-6 bg-secondary whitespace-nowrap text-primary-light  font-black"
                         >
                             My Work
                         </Link>
@@ -115,7 +115,7 @@ const Nav = () => {
                         <Link
                             onClick={toggleMenu} // Add this line
                             to="/education"
-                            className="block my-2 lg:my-0 py-3 px-8 bg-primary whitespace-nowrap text-primary-light text-xl font-black"
+                            className="block my-2 lg:my-0 py-2 px-6 bg-secondary whitespace-nowrap text-primary-light font-black"
                         >
                             Education
                         </Link>
@@ -124,7 +124,7 @@ const Nav = () => {
                         <Link
                             onClick={toggleMenu} // Add this line
                             to="/aboutme"
-                            className="block my-2 lg:my-0 py-3 px-8 bg-primary whitespace-nowrap text-primary-light text-xl font-black"
+                            className="block my-2 lg:my-0 py-2 px-6 bg-secondary whitespace-nowrap text-primary-light font-black"
                         >
                             About Me
                         </Link>
@@ -133,7 +133,7 @@ const Nav = () => {
                         <Link
                             onClick={toggleMenu} // Add this line
                             to="/contact"
-                            className="block my-2 lg:my-0 py-3 px-8 bg-primary whitespace-nowrap text-primary-light text-xl font-black"
+                            className="block my-2 lg:my-0 py-2 px-6 bg-primary whitespace-nowrap text-primary-light font-black"
                         >
                             Contact
                         </Link>

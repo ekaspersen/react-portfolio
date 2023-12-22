@@ -4,24 +4,33 @@ const Education = () => {
     return (
         <div className="lg:h-screen">
             <section className="w-full flex justify-end xl:justify-start h-full">
-                <div className="absolute hidden  z-[-10] xl:relative max-w-{32px} lg:max-w-full flex-1 h-full lg:grid place-items-center flex-col">
+                <div className="absolute hidden z-[-10] xl:relative max-w-{32px} lg:max-w-full flex-1 h-full lg:grid place-items-center flex-col">
                     <img
                         src={everyday}
                         alt="graphic"
-                        className="absolute w-full h-full  object-contain"
+                        className="absolute w-full h-full  object-cover"
                     />
-                    <div className=" flex flex-col gap-4 font-bold text-3xl">
-                        <p className="text-primary">Does Youtube Count?</p>
-                        <p className="text-primary-light opacity-50">
-                            Does Youtube Count?
+                    <div className="flex flex-col font-bold xl:text-xl xxl:gap-2 xxl:text-3xl">
+                        <p className="text-primary">
+                            Crafting code with skill, precision, and care,
                         </p>
-                        <p className="text-primary">Does Youtube Count?</p>
                         <p className="text-primary-light opacity-50">
-                            Does Youtube Count?
+                            User needs at heart, a vision rare.
                         </p>
-                        <p className="text-primary">Does Youtube Count?</p>
+                        <p className="text-primary">
+                            Each new line, a step towards mastery's quest,
+                        </p>
                         <p className="text-primary-light opacity-50">
-                            Does Youtube Count?
+                            In design and code, I'm at my best.
+                        </p>
+                        <p className="text-primary">
+                            In every script, my passion shows,
+                        </p>
+                        <p className="text-primary-light opacity-50">
+                            Frontend dev. where my skill grows.
+                        </p>
+                        <p className="text-[10px] font-montserrat italic text-primary">
+                            - Eskil K. Hagen ft. GPT-4
                         </p>
                     </div>
                 </div>
@@ -103,7 +112,7 @@ const Education = () => {
             </section>
             <section
                 id="noroff"
-                className="w-full flex flex-col-reverse lg:flex-row h-fit bg-primary text-secondary-light scroll-m-8"
+                className="w-full flex flex-col-reverse lg:flex-row h-fit bg-primary text-secondary-light scroll-m-16"
             >
                 <div className="flex-1 flex flex-col gap-8 px-4 sm:px-16 pb-16 lg:py-32 box-border">
                     <h2 className="text-white font-black text-6xl lg:text-4xl xl:text-6xl w-fit">
@@ -251,8 +260,11 @@ const Education = () => {
             </section>
 
             <section className="w-full flex flex-col lg:flex-row-reverse">
-                <div className="flex-1 flex flex-col lg:flex-col-reverse">
-                    <div className="flex lg:hidden flex-col px-4 lg:px-8 py-12 xl:px-16 xl:py-24">
+                <div
+                    id="bodovgs"
+                    className="flex-1 flex flex-col gap-16 px-4 lg:px-8 py-12 xl:px-16 xl:py-24 scroll-m-16"
+                >
+                    <div className="flex flex-col ">
                         <span className="text-3xl text-secondary-light font-bold">
                             Bodø Videregående Skole
                         </span>
@@ -263,75 +275,101 @@ const Education = () => {
                             2020 - 2021
                         </span>
                     </div>
-                    <div className="lg:flex mt-auto lg:bg-primary hidden flex-col px-4 py-12 lg:px-8 xl:px-16 xl:py-24">
-                        <span className="text-3xl text-primary-light font-bold">
-                            Bodin Videregående Skole
-                        </span>
-                        <span className="text-secondary-light text-4xl sm:text-5xl font-black">
-                            IT1 - Programfag
-                        </span>
-                        <span className="text-xl text-white font-bold">
-                            2020 - 2021
-                        </span>
-                    </div>
-                    <div
-                        id="bodovgs"
-                        className="md:max-w-long-text lg:max-w-none scroll-m-72 lg:scroll-m-12 flex flex-col h-full px-4 py-8 gap-8 lg:px-8 lg:py-16 xl:px-16 xl:py-24"
-                    >
-                        <p>
-                            My last year at high-school i did common studies
-                            (Påbygg), and i had IT as my extra corriculum. It
-                            was only 5 classes each week, but i got to continue
-                            to develop some of my skills from the year before.
-                            First we went over how to use HTML and CSS in 3
-                            weeks, remember it was nice to freshen up after the
-                            summer.
+                    <div className="md:max-w-long-text lg:max-w-none scroll-m-72 lg:scroll-m-12 flex flex-col h-full gap-8">
+                        <p className=" font-extrabold text-primary-light opacity-70">
+                            In my final year of high school, I focused on
+                            advanced studies with an emphasis on IT as an
+                            elective. This experience allowed me to further
+                            refine my technical skills, particularly in web
+                            development.
                         </p>
                         <p>
-                            Then we spent 2-3 months going over php/mysql,
-                            -mainly creating databases using C.R.U.D. After
-                            christmas we spent a long time on a main assignment;
-                            creating a Admin panel and UI where users can view
-                            inventory and update their own data for a library
-                            with html/css and php/mysql. Sadly the project is
-                            lost on a school computer.
+                            During the initial phase of the year, I revisited
+                            and strengthened my knowledge of HTML and CSS over a
+                            three-week period. This refresher was particularly
+                            beneficial after the summer break, allowing me to
+                            solidify my understanding of web design
+                            fundamentals.
                         </p>
                         <p>
-                            This was a great year for me because the tasks was
-                            simple so i got to use my time in class on learning
-                            new stuff alongside refreshing things that was
-                            unclear or forgotten from the last year!
+                            The highlight of the year was a major project after
+                            Christmas, where I developed an Admin Panel and User
+                            Interface for a library system. This project
+                            involved integrating basic HTML/CSS/JS websites with
+                            PHP/MySQL to enable inventory viewing and user data
+                            updates. Although the project was lost due to being
+                            stored on a school computer, the experience provided
+                            me with hands-on practice in real-world
+                            applications.
                         </p>
-                        <p className="text-2xl text-primary-light mt-8 h-full flex flex-col justify-between">
-                            <span>
-                                The most important qualities i got from studying
-                                IT in high-school (Learning to code was also
-                                good) must be knowledge of how the backend of
-                                everything works. Even though it is not my
-                                field, i think it is very helpful for both me
-                                and piers if developers can discuss things
-                                together -
-                            </span>
+                        <p className="font-bold text-primary-light">
+                            Reflecting on this pivotal year, I value the
+                            experiences and skills gained, which have solidified
+                            my foundation in IT and web development. These
+                            skills and insights continue to be instrumental as I
+                            progress in my career.
+                        </p>
 
-                            <li className="custom-bullet font-black text-6xl">
-                                From Design to back to Front end.
-                            </li>
-                        </p>
+                        <div class="flex flex-col  gap-4 lg:gap-0">
+                            <span className="text-3xl text-primary-light font-montserrat italic font-bold mb-2">
+                                Summarised:
+                            </span>
+                            <details>
+                                <summary className="font-bold cursor-pointer text-secondary-light">
+                                    HTML and CSS Refresh
+                                </summary>
+                                <p>
+                                    Reinforced understanding of HTML and CSS,
+                                    focusing on refreshing knowledge and
+                                    improving proficiency in web design
+                                    fundamentals.
+                                </p>
+                            </details>
+
+                            <details>
+                                <summary className="font-bold cursor-pointer text-secondary-light">
+                                    PHP/MySQL Advanced
+                                </summary>
+                                <p>
+                                    In-depth exploration of PHP and MySQL,
+                                    focusing on database creation and management
+                                    using CRUD operations, and developing
+                                    dynamic web applications.
+                                </p>
+                            </details>
+
+                            <details>
+                                <summary className="font-bold cursor-pointer text-secondary-light">
+                                    Web Application Development
+                                </summary>
+                                <p>
+                                    Hands-on project experience in creating a
+                                    comprehensive Admin Panel and User Interface
+                                    for a library system, integrating both
+                                    frontend and backend technologies.
+                                </p>
+                            </details>
+
+                            <details>
+                                <summary className="font-bold cursor-pointer text-secondary-light">
+                                    Self-Guided Learning
+                                </summary>
+                                <p>
+                                    Emphasis on independent learning and skill
+                                    enhancement, utilizing class time for
+                                    exploring new technologies and reinforcing
+                                    unclear or forgotten concepts from previous
+                                    studies.
+                                </p>
+                            </details>
+                        </div>
                     </div>
                 </div>
-                <div className="flex-1 h-full flex flex-col bg-primary lg:bg-transparent">
-                    <div className="lg:flex hidden flex-col px-4 lg:px-8 py-12 xl:px-16 xl:py-24">
-                        <span className="text-3xl text-secondary-light font-bold">
-                            Bodø Videregående Skole
-                        </span>
-                        <span className="text-primary-light text-5xl font-black">
-                            IT1 - Programfag
-                        </span>
-                        <span className="text-xl text-white font-bold">
-                            2020 - 2021
-                        </span>
-                    </div>
-                    <div className="flex lg:hidden flex-col px-4 py-12 lg:px-8 xl:px-16 xl:py-24">
+                <div
+                    id="bodinvgs"
+                    className="flex-1 h-full flex flex-col bg-primary gap-16 px-4 py-12 lg:px-8 xl:px-16 xl:py-24  scroll-m-16"
+                >
+                    <div className="flex flex-col ">
                         <span className="text-3xl  text-primary-light font-bold">
                             Bodin Videregående Skole
                         </span>
@@ -342,56 +380,193 @@ const Education = () => {
                             2020 - 2021
                         </span>
                     </div>
-                    <div
-                        id="bodinvgs"
-                        className="md:max-w-long-text lg:max-w-none flex scroll-m-80 lg:scroll-m-[-20000px] bg-primary font-medium flex-col px-4 py-8 gap-8 lg:px-8 lg:py-16 xl:px-16 xl:py-24"
-                    >
+                    <div className="md:max-w-long-text lg:max-w-none flex scroll-m-80 lg:scroll-m-[-20000px] bg-primary font-medium flex-col gap-8">
                         <p className="font-bold text-secondary-light50op">
-                            The start of my developer/IT career was deeply
-                            influenced by learning from an ex-military officer
-                            who started working in ICT-maintenance for several
-                            military operations in Bodø from the end of the 90s.
-                            This experience was steeped in the earliest culture
-                            of data-nerdism, and the rewards from such exposure
-                            were plentiful.
+                            The beginning of my journey in the IT and
+                            development field was greatly influenced by a former
+                            military officer who transitioned into
+                            ICT-maintenance for various military operations in
+                            Bodø since the late 90s. This unique exposure to the
+                            early culture of technology enthusiasts and
+                            data-driven approaches significantly enriched my
+                            learning experience.
                         </p>
                         <p>
-                            Our studies involved learning how the w3 is put
-                            together, what/how LANs and WANs are and work, how
-                            to set up routing for LAN servers, protocols and
-                            generally how everything is set up from bits to
-                            protocols to servers talking to send code that in
-                            the end tells the screen what rgb value the pixels
-                            should fire.
+                            My educational pathway included a deep dive into the
+                            fundamentals of web technology, covering the
+                            architecture of the World Wide Web, the
+                            functionality of local and wide area networks (LANs
+                            and WANs), and the complexities of server routing.
+                            We also studied data communication protocols,
+                            understanding how data travels from basic binary
+                            units to complex server interactions. This year
+                            marked my first experience with HTML and CSS,
+                            presenting a challenging yet engaging learning
+                            curve. My interest in CSS grew as I became
+                            proficient in manipulating the box model.
+                            Additionally, I began exploring JavaScript, creating
+                            basic projects like a simple cookie-clicker game and
+                            a Celsius/Fahrenheit/Kelvin converter to familiarize
+                            myself with programming concepts.
                         </p>
                         <p>
-                            This year was my first meeting with HTML and CSS. It
-                            was a steep learning curve, but i found a passion
-                            for CSS and i had a very good understanding of
-                            bending the box model by the time the year was over.
-                            We also dabbled a bit with javaScript, nothing much
-                            but i made a very simple cookie-clicker type game
-                            and a Celsius/Fahrenheit/kelvin translator just to
-                            get familiarised with programming.
+                            The journey also involved back-end development,
+                            focusing on PHP/MySQL. We started with fundamental
+                            programming concepts such as variables, arrays, and
+                            loops. Practical applications included developing
+                            websites using databases we created and managed on
+                            our own LAN, which we connected using Ethernet
+                            cables. My time at Bodin vgs. was crucial in shaping
+                            my career in development. The teaching approach,
+                            blending humor with discipline, offered constant
+                            inspiration and provided a comprehensive insight
+                            into the IT sector. This experience has
+                            significantly contributed to my current career
+                            trajectory, giving me a clear and confident
+                            understanding of my future in the IT field.
                         </p>
-                        <p>
-                            Delving deeper into the world of back-end
-                            development, we dedicated significant time of the
-                            year learning about and creating databases with
-                            PHP/MySQL. First we learned simple programming
-                            foundations like var., arrays, loops and other logic
-                            to get started. then wee created a couple CRUD
-                            applications on our local networks.
-                        </p>
-                        <p className="font-bold text-xl text-secondary-light">
-                            My time at Bodin vgs. set the groundwork for my
-                            career and gave me a strong foundation as a
-                            developer. My teacher was a big inspiration to me
-                            with his light hearted yet very disciplined take on
-                            teaching. We got to look into how it is to work in
-                            every IT field and it lead me down the road i’m on
-                            today, feeling confident about my path onwards.
-                        </p>
+                        <div class="flex flex-col gap-4 lg:gap-0">
+                            <span className="text-3xl text-secondary-light font-montserrat italic font-bold mb-2">
+                                Summarised:
+                            </span>
+                            <details>
+                                <summary className="font-bold cursor-pointer text-secondary-light">
+                                    Web Fundamentals
+                                </summary>
+                                <p>
+                                    Detailed understanding of HTML structure,
+                                    DOM manipulation, and basic SEO principles.
+                                </p>
+                            </details>
+
+                            <details>
+                                <summary className="font-bold cursor-pointer text-secondary-light">
+                                    Network Technologies
+                                </summary>
+                                <p>
+                                    Knowledge of networking concepts, including
+                                    IP addressing, subnetting, and configuring
+                                    LAN/WAN environments.
+                                </p>
+                            </details>
+
+                            <details>
+                                <summary className="font-bold cursor-pointer text-secondary-light">
+                                    Server Routing
+                                </summary>
+                                <p>
+                                    Understanding of server-client
+                                    communication, DNS configuration, and load
+                                    balancing.
+                                </p>
+                            </details>
+
+                            <details>
+                                <summary className="font-bold cursor-pointer text-secondary-light">
+                                    Data Communication Protocols
+                                </summary>
+                                <p>
+                                    Familiarity with TCP/IP, HTTP/HTTPS, and
+                                    WebSocket protocols for data transfer and
+                                    real-time communication.
+                                </p>
+                            </details>
+
+                            <details>
+                                <summary className="font-bold cursor-pointer text-secondary-light">
+                                    HTML
+                                </summary>
+                                <p>
+                                    Proficiency in creating semantic HTML5
+                                    structures and integrating multimedia
+                                    content.
+                                </p>
+                            </details>
+
+                            <details>
+                                <summary className="font-bold cursor-pointer text-secondary-light">
+                                    CSS
+                                </summary>
+                                <p>
+                                    Learned to write CSS fluently by
+                                    understanding the box-model quickly and
+                                    learned both flexbox and grid on my own time
+                                    (grid was developed this year), but our
+                                    teacher also gave us a good understanding of
+                                    coding layouts "the old way" with table and
+                                    float layouts.
+                                </p>
+                            </details>
+
+                            <details>
+                                <summary className="font-bold cursor-pointer text-secondary-light">
+                                    JavaScript Basics
+                                </summary>
+                                <p>
+                                    Created small apps like a fahrenheit to
+                                    celsius to kelvin converter and a cookie
+                                    clicker type game to get to use our
+                                    programming foundational skills from PHP in
+                                    a frontend environment.
+                                </p>
+                            </details>
+
+                            <details>
+                                <summary className="font-bold cursor-pointer text-secondary-light">
+                                    PHP/MySQL
+                                </summary>
+                                <p>
+                                    Skills in developing dynamic web
+                                    applications using PHP, including CRUD
+                                    operations with MySQL databases, session
+                                    management, and form validation.
+                                </p>
+                            </details>
+
+                            <details>
+                                <summary className="font-bold cursor-pointer text-secondary-light">
+                                    Programming Foundations
+                                </summary>
+                                <p>
+                                    Strong understanding of fundamental
+                                    programming concepts, including
+                                    object-oriented programming, data
+                                    structures, and algorithmic problem-solving.
+                                </p>
+                            </details>
+
+                            <details>
+                                <summary className="font-bold cursor-pointer text-secondary-light">
+                                    Network Setup and Management
+                                </summary>
+                                <p>
+                                    Hands-on experience in setting up and
+                                    managing network infrastructures, including
+                                    router and switch configuration, and
+                                    understanding network security basics.
+                                </p>
+                            </details>
+                            <details>
+                                <summary className="font-bold cursor-pointer text-secondary-light">
+                                    Problem-Solving and Logical Thinking
+                                </summary>
+                                <p>
+                                    Developed strong problem-solving skills
+                                    through debugging and optimizing code, and
+                                    implementing efficient algorithms.
+                                </p>
+                            </details>
+                            <details>
+                                <summary className="font-bold cursor-pointer text-secondary-light">
+                                    Adaptability and Learning Agility
+                                </summary>
+                                <p>
+                                    Ability to quickly adapt to new technologies
+                                    and methodologies in the rapidly evolving IT
+                                    landscape.
+                                </p>
+                            </details>
+                        </div>
                     </div>
                 </div>
             </section>

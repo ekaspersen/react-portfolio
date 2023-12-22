@@ -4,11 +4,12 @@ module.exports = {
     theme: {
         extend: {
             screens: {
+                xxl: "1540px",
                 huge: "1780px",
             },
             fontFamily: {
                 inter: ["Inter", "sans-serif"],
-                montserrat: ["Montserrat", "serif"],
+                montserrat: ["Montserrat", "sans-serif"],
             },
             fontSize: {
                 "3xl": ["32px", "1.25"],
@@ -21,7 +22,7 @@ module.exports = {
             colors: {
                 primary: {
                     DEFAULT: "#442B48",
-                    light: "#844E8C",
+                    light: "#884E8C",
                 },
                 secondary: {
                     DEFAULT: "#261B10",

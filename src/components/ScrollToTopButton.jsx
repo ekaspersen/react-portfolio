@@ -21,11 +21,11 @@ const ScrollToTopButton = () => {
     }, []);
 
     return (
-        <div className="">
+        <div className="bg-black ">
             {isVisible && (
                 <div
                     onClick={scrollToTop}
-                    className="flex max-w-screen justify-center whitespace-nowrap gap-4 py-8 mt-16 bg-black overflow-hidden text-xs lg:text-3xl font-black"
+                    className="cursor-pointer flex max-w-screen justify-center whitespace-nowrap gap-4 py-8 mt-16 bg-black overflow-hidden text-xs lg:text-3xl font-black"
                 >
                     <span>SCROLL TO TOP</span>|<span>SCROLL TO TOP</span>|
                     <span>SCROLL TO TOP</span>|<span>SCROLL TO TOP</span>|

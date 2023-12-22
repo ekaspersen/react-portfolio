@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 const EmailBox = () => {
     const [showModal, setShowModal] = useState(false);
-    const email = "ekhatwork@gmail.com";
+    const email = "eskilkasp@gmail.com";
 
     const copyToClipboard = async () => {
         try {
@@ -38,7 +38,7 @@ const EmailBox = () => {
                 </span>
                 <span className="font-bold text-xs">
                     CLICK THIS BOX TO COPY EMAIL ADDRESS <br /> I FIND EMAIL
-                    POP-UPS ANNOYING TO
+                    POP-UPS ANNOYING TOO
                 </span>
             </div>
             {showModal && (
@@ -66,8 +66,8 @@ const Contact = () => {
                             LinkedIn
                         </span>
                         <span className="font-bold text-xs">
-                            CLICK THIS BOX TO REDIRECT TO MY <br /> I LINKEDIN
-                            IN A NEW TAB
+                            CLICK THIS BOX TO REDIRECT TO MY <br /> LINKEDIN IN
+                            A NEW TAB
                         </span>
                     </div>
                 </a>
