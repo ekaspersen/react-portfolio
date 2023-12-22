@@ -26,7 +26,9 @@ const Home = () => {
                 />
                 <h1 className="flex flex-col text-2xl sm:text-3xl lg:text-6xl mt-32 md:mt-0 md:gap-4 mx-4 sm:mx-8 z-40">
                     <span className="italic font-montserrat text-primary-light font-bold">
+
                         Welcome to my portfolio
+
                     </span>
                     <span>
                         i <span className="text-secondary-light"> Design </span>
