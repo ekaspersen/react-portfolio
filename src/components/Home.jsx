@@ -26,7 +26,7 @@ const Home = () => {
                 <h1 className="flex flex-col text-2xl sm:text-3xl lg:text-6xl gap-4 mx-4 sm:mx-8">
                     <span>Frontend developer portfolio</span>
                     <span>
-                        i <span className="text-secondary-light"> Design </span>
+                        I <span className="text-secondary-light"> design </span>
                         and <span className="text-secondary-light"> code </span>
                         websites.
                     </span>
