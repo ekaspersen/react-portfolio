@@ -38,17 +38,11 @@ const AboutMe = () => {
                     the entire process from creating the design to coding the
                     website and its deployment.
                 </p>
-                <p className="font-medium">
-                    With a Solid background in CSS i can make any design come to
-                    life on the web. Whether it is CSS, SASS, TailwindCSS or
-                    Bootstrap i can make it mobile responsive, animated and
-                    optimised. I am very design oriented so i love creating both
-                    the User interface and make it come to live with CSS.
-                </p>
+
                 <p className="font-medium">
                     I've learned the basics of programming through a bit of php
-                    and JS at high-school and only JS and NodeJS in the last
-                    couple of years at Noroff. In the last two years I've also
+                    and JS at high-school, mostly JS and NodeJS in the last
+                    couple of years at Noroff. In the last two years I've
                     started using React- and Next -JS for my applications. I
                     also handle API integrations and have some knowledge of SQL
                     and database/table management. This means I can smoothly
@@ -60,7 +54,14 @@ const AboutMe = () => {
                         web-applications.
                     </span>
                 </p>
-
+                <p className="font-medium">
+                    With a Solid background in CSS i can make any design come to
+                    life on the web. Whether it is CSS, SASS, TailwindCSS or
+                    Bootstrap i can make it mobile responsive, animated and
+                    optimised. I am very design oriented so i love creating both
+                    the User interface -(design) and make it come to life with
+                    CSS.
+                </p>
                 <p className="font-medium">
                     Away from my professional life, I value the time spent with
                     friends and engaging in various activities. These

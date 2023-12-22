@@ -28,13 +28,13 @@ const SkillsDetailsList = () => {
                     <div className="flex flex-col">
                         {groupedSkills[category].map((skill, index) => (
                             <div key={index} className="flex flex-col">
-                                <details className="max-w-xs">
-                                    <summary className="underline max-w-[218px] md:max-w-[232px] italic font-semibold underline-offset-4">
+                                <details className="max-w-xs cursor-default">
+                                    <summary className="underline max-w-[218px] md:max-w-[232px] cursor-pointer italic font-semibold underline-offset-4">
                                         {skill.name}
                                     </summary>
                                     <p className=" text-xs">{skill.info}</p>
                                 </details>
-                                <p className="text-secondary-light50op text-xs italic">
+                                <p className="text-secondary-light50op text-xs font-bold italic">
                                     {skill.subCategory}
                                 </p>
                             </div>
