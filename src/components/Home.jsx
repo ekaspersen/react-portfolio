@@ -40,8 +40,8 @@ const Home = () => {
                     </span>
                 </h1>
                 <div className="w-full flex z-40">
-                    <div className="flex-1 px-2 sm:px-8 gap-1 text-xs sm:text-base text-secondary-light">
-                        <p className="font-bold opacity-50 max-w-short-text">
+                    <div className="flex-1 px-2 sm:px-8 gap-1 text-xs sm:text-base">
+                        <p className="font-bold opacity-50 max-w-short-text text-secondary-light">
                             A Frontend developer and UX designer with a passion
                             for great user experience and clean code.
                         </p>
