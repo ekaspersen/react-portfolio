@@ -122,6 +122,96 @@ const MyWork = () => {
                 </div>
             </section>
             */}
+            <section className="min-h-screen flex flex-col-reverse py-16 gap-8 lg:flex-row-reverse bg-primary">
+                <div className="flex-1 min-h-full flex flex-col gap-8 justify-center items-center">
+                    {/*<div className="flex gap-4 flex-wrap px-8 justify-center">
+                        <img src={jslogo} alt="JS shield" title="javaScript" />
+                        <img src={csslogo} alt="CSS shield" title="CSS" />
+                        <img src={htmllogo} alt="HTML shiled" title="HTML" />
+                        <img
+                            src={tailwindCSSlogo}
+                            alt="tailwindCSS logo"
+                            title="TailwindCSS"
+                        />
+                        <img src={vitelogo} alt="Vite Js logo" title="ViteJs" />
+                        <img
+                            className="max-h-9 hover-restapi"
+                            src={restapi}
+                            alt="REST API"
+                            title="REST API"
+                        />
+                    </div>*/}
+                    <div className="gap-4 lg:hidden flex">
+                        <a
+                            className="block my-2 lg:my-0 py-3 bg-secondary-light px-8 whitespace-nowrap text-primary text-xl font-black"
+                            target="_blank"
+                            href="https://github.com/ekaspersen/eskil-kh-semester-project-2"
+                        >
+                            GitHub
+                        </a>
+                        <a
+                            className="block my-2 lg:my-0 py-3 bg-secondary-light px-8 whitespace-nowrap text-primary text-xl font-black"
+                            target="_blank"
+                            href="https://www.figma.com/file/LS7szsiCEJ8hNp8t0hhw3F/SEMESTER-PROJECT-2?type=design&node-id=0%3A1&t=fSFt6kRvshglbse6-1"
+                        >
+                            Figma
+                        </a>
+                    </div>
+                    <img
+                        className="max-w-full w-11/12 mx-4 border-8 rounded-2xl border-secondary"
+                        src={ctfHero}
+                        alt="Gif of website"
+                    />
+                    <a
+                        className="block my-2 lg:my-0 py-3 px-8 bg-secondary whitespace-nowrap text-primary-light text-xl font-black"
+                        target="_blank"
+                        href="https://catch-the-fox.vercel.app/"
+                    >
+                        Checkout website
+                    </a>
+                    <div className="gap-4 hidden lg:flex">
+                        <a
+                            className="block my-2 lg:my-0 py-3 bg-secondary-light px-8 whitespace-nowrap text-primary text-xl font-black"
+                            target="_blank"
+                            href="https://github.com/ekaspersen/catch-the-fox"
+                        >
+                            GitHub
+                        </a>
+                        <a
+                            className="block my-2 lg:my-0 py-3 bg-secondary-light px-8 whitespace-nowrap text-primary text-xl font-black"
+                            target="_blank"
+                            href="https://www.figma.com/file/ncfRqLbEg69CnTyR3VmJjc/Catch-The-Fox?type=design&node-id=540%3A69&mode=design&t=2ZA6obeSqjxQvFAw-1"
+                        >
+                            Figma
+                        </a>
+                    </div>
+                </div>
+                <div className="flex-1 min-h-full flex flex-col gap-8 justify-center items-center px-8">
+                    <h2 className="text-5xl font-black font-montserrat italic text-secondary-light w-full max-w-long-text">
+                        CATCH THE FOX
+                    </h2>
+                    <p className="max-w-long-text">
+                        Catch the fox is a upincoming Rock-band from Oslo,
+                        Norway. They gave me one of their t-shirt designs and i
+                        made this website based of it. It is a informative
+                        website and merch-shop for fans of the band.
+                    </p>
+                    <p className="max-w-long-text">
+                        It is my first project using NextJS, Typescript and
+                        Zustand. I am also learning how to integrate Vipps for
+                        payment at the same time, so this is really is a big
+                        learning process for me
+                    </p>
+                    <p className="max-w-long-text w-full font-black text-sm text-secondary-light50op">
+                        Work In Progress: <br />
+                        The about us section will get a overhaul, the website
+                        shall get a language option for text and more tweaks
+                        will commence before the page is done. Main focus right
+                        now is getting the shop working and vipps integrated
+                        properly
+                    </p>
+                </div>
+            </section>
             <section className="min-h-screen flex flex-col-reverse py-16 gap-8 lg:flex-row bg-black">
                 <div className="flex-1 min-h-full flex flex-col gap-8 justify-center items-center">
                     <div className="flex gap-4 flex-wrap px-8 justify-center">
@@ -187,12 +277,21 @@ const MyWork = () => {
                         Tetrad Marketing
                     </h2>
                     <p className="max-w-long-text">
-                        Tetrad Marketing was my student company. I was lucky to
-                        get to use our website as my final exam. It is a
-                        ReactJs/Vite project that uses Firebase/Auth for User
-                        authentication to the Admin panel, and Firestore to
-                        create an API for blogposts and of course display them
-                        on the site.
+                        This website is a ReactJs/Vite project that uses
+                        Firebase/Auth for User authentication to the Admin
+                        panel, and Firestore to create an API for blogposts and
+                        of course display them on the site. I used TailwindCSS
+                        for styling, vanilla Javascript(instead of TypeScript)
+                        and framer-motion for animations.
+                    </p>
+                    <p className="max-w-long-text">
+                        Tetrad Marketing was my student company. I got to use
+                        our website as my final exam at Noroff. I created
+                        everything from the company logo, to the website design
+                        and both the front and backend of the website. Since i
+                        was the client i created the brief myself to and managed
+                        to make the exam harder for myself but also got a 10/10
+                        rating so definetively worth it!
                     </p>
                     <p className="max-w-long-text">
                         I learned a lot from having a student company with four
@@ -200,14 +299,10 @@ const MyWork = () => {
                         it is probably the knowledge of how to start a business,
                         communicating with partners and i also learned a lot
                         about marketing like adds, google business and honed in
-                        my SEO skills and got a client page to rank 3. in a
-                        verry competetive restaurant area in Oslo.
+                        my SEO skills and got a client page to rank 3. in a very
+                        competetive restaurant area in Oslo.
                     </p>
-                    <p className="max-w-long-text">
-                        It was a fun project to work on, i created the logo,
-                        brief, design, code and deployed this website by myself
-                    </p>
-                    <p className="max-w-long-text">
+                    <p className="max-w-long-text text-xs">
                         If you want to checkout the page for the restaurant i
                         created i'll leave a link here. This initial design
                         served as a foundation because they needed something
