@@ -28,21 +28,25 @@ import prismaLogo from "../assets/icons/prismaLogo.png";
 const MyWork = () => {
     return (
         <div className="flex flex-col">
-            <div className="w-full bg-secondary-light h-24"></div>
+            <div className="w-full bg-black h-24"></div>
             <div className="flex ">
-                <div className="flex flex-col px-8 py-16 gap-8 bg-primary text-secondary-light">
-                    <h1 className="text-5xl font-black">My Work</h1>
-                    <p className="text-3xl font-medium max-w-long-text">
-                        Here's a collection of some of the best websites i've
-                        created so far.
-                    </p>
-                    <p className="max-w-long-text">
-                        all projects on this page are full applications planned,
-                        designed and buildt by me. Working on a couple real
-                        client projects that will be live soon!
-                    </p>
+                <div className="flex lg:flex-1 items-center flex-col px-8 py-16 gap-8 bg-primary text-secondary-light">
+                    <h1 className="text-5xl font-montserrat italic font-black max-w-long-text w-full">
+                        My Projects
+                    </h1>
+                    <div className="flex flex-col gap-2 text-white">
+                        <p className="text-3xl font-montserrat italic max-w-long-text w-full">
+                            Browse my portfolio
+                        </p>
+                        <p className="max-w-long-text w-full">
+                            Take a peek at my portfolio – you'll find simple,
+                            easy-to-use designs that showcase my straightforward
+                            style in web development. My work is all about
+                            user-friendly designs and reliable code
+                        </p>
+                    </div>
                 </div>
-                <div className="flex-1 min-h-full bg-secondary-light min-w-[32px]"></div>
+                <div className="flex-1 min-h-full bg-black min-w-[32px]"></div>
             </div>
             <section className="min-h-screen flex flex-col-reverse py-16 gap-8 lg:flex-row-reverse bg-primary">
                 <div className="flex-1 min-h-full flex flex-col gap-8 justify-center items-center">
@@ -172,8 +176,6 @@ const MyWork = () => {
                             alt="tailwindCSS logo"
                             title="tailwindCSS"
                         />
-                        <img src={htmllogo} alt="HTML shiled" title="HTML" />
-                        <img src={csslogo} alt="CSS shield" title="CSS" />
                         <img src={jslogo} alt="JS shield" title="javaScript" />
                         <img
                             src={firebaselogo}

@@ -32,7 +32,7 @@ const AboutMe = () => {
                     About Me
                 </h1>
 
-                <p className="font-bold  text-lg">
+                <p className="font-bold  text-lg text-secondary-light opacity-75">
                     Hello there! My name is Eskil K. Hagen and I'm a Frontend
                     Developer and User Interface Designer. This means i can do
                     the entire process from creating the design to coding the
@@ -69,7 +69,7 @@ const AboutMe = () => {
                     me with fresh perspectives that I believe also benefit my
                     work.
                 </p>
-                <p className="font-medium">
+                <p className="font-medium text-secondary-light opacity-75">
                     My educational journey has given me a solid foundation in
                     coding standards, UX principles, and the latest JavaScript
                     frameworks and libraries. I'm committed to continuous

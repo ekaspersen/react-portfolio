@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
@@ -24,48 +24,29 @@ const bottomVariant = {
 const navVariant = {
     open: {
         height: "fit-content",
-        y: 0,
+        y: -5,
         opacity: 1,
         transition: { staggerChildren: 0.2, delayChildren: 0.3 },
     },
-    closed: { height: "0%", y: -19 },
+    closed: { height: "0%", y: -24, opacity: 0 },
 };
 
 const listItemVariant = {
     open: { opacity: 1, y: 0 },
     closed: { opacity: 0, y: -400 },
 };
-// /Motion Variants/
-
-// Function to get window's width
-const useIsLgOrAbove = () => {
-    const [isLgOrAbove, setIsLgOrAbove] = useState(window.innerWidth >= 1024);
-
-    useEffect(() => {
-        const handleResize = () => setIsLgOrAbove(window.innerWidth >= 1024);
-        window.addEventListener("resize", handleResize);
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
-
-    return isLgOrAbove;
-};
 
 const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const isLgOrAbove = useIsLgOrAbove();
 
     const toggleMenu = () => {
-        if (!isLgOrAbove) {
-            setIsOpen(!isOpen);
-        }
+        setIsOpen(!isOpen);
     };
 
-    const animationState = isLgOrAbove ? "open" : isOpen ? "open" : "closed";
+    const animationState = isOpen ? "open" : "closed";
 
     return (
-        <header className="header-index fixed top-0 flex left-0 right-0 justify-between items-center p-4 bg-secondary text-xl lg:text-base">
+        <header className="header-index fixed top-0 flex left-0 right-0 justify-between items-center py-4 px-8 bg-primary text-xl">
             <Link to="/" className="max-h-full">
                 <img src={logo} alt="Logo" />
             </Link>
@@ -73,7 +54,7 @@ const Nav = () => {
             <nav className="flex flex-col h-full items-end relative">
                 <button
                     onClick={toggleMenu}
-                    className="h-8 w-12 flex lg:hidden flex-col justify-between"
+                    className="h-8 w-12 flex flex-col justify-between"
                 >
                     <motion.div
                         className="h-1 w-full bg-white rounded-md"
@@ -95,45 +76,74 @@ const Nav = () => {
                     />
                 </button>
                 <motion.ul
-                    className={`flex-col bg-secondary px-4 pb-4 mr-[-16px] lg:p-0 lg:pr-4 lg:flex-row lg:gap-4 absolute top-14 transition duration-200 ${
+                    className={`flex-col bg-primary px-4 pb-4 mr-[-16px] absolute top-14 transition duration-200 ${
                         isOpen ? "flex" : "hidden"
-                    } lg:flex lg:static`}
+                    }`}
                     variants={navVariant}
                     animate={animationState}
                     transition={{ duration: 0.5 }}
                 >
-                    <motion.li variants={listItemVariant}>
+                    <motion.li
+                        variants={listItemVariant}
+                        whileHover={{ scale: 1.3 }}
+                        whileTap={{ scale: 1.3 }}
+                    >
                         <Link
-                            onClick={toggleMenu} // Add this line
-                            to="/mywork"
-                            className="block my-2 lg:my-0 py-2 px-6 bg-secondary whitespace-nowrap text-primary-light  font-black"
+                            onClick={toggleMenu}
+                            to="/"
+                            className="block text-center my-2 py-2 px-6 bg-primary whitespace-nowrap text-primary-light hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
                         >
-                            My Work
+                            Home
                         </Link>
                     </motion.li>
-                    <motion.li variants={listItemVariant}>
+                    <motion.li
+                        variants={listItemVariant}
+                        whileHover={{ scale: 1.3 }}
+                        whileTap={{ scale: 1.3 }}
+                    >
                         <Link
-                            onClick={toggleMenu} // Add this line
+                            onClick={toggleMenu}
+                            to="/mywork"
+                            className="block text-center my-2 py-2 px-6 bg-primary whitespace-nowrap text-primary-light hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
+                        >
+                            My Projects
+                        </Link>
+                    </motion.li>
+                    <motion.li
+                        variants={listItemVariant}
+                        whileHover={{ scale: 1.3 }}
+                        whileTap={{ scale: 1.3 }}
+                    >
+                        <Link
+                            onClick={toggleMenu}
                             to="/education"
-                            className="block my-2 lg:my-0 py-2 px-6 bg-secondary whitespace-nowrap text-primary-light font-black"
+                            className="block text-center my-2 py-2 px-6 bg-primary whitespace-nowrap text-primary-light hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
                         >
                             Education
                         </Link>
                     </motion.li>
-                    <motion.li variants={listItemVariant}>
+                    <motion.li
+                        variants={listItemVariant}
+                        whileHover={{ scale: 1.3 }}
+                        whileTap={{ scale: 1.3 }}
+                    >
                         <Link
-                            onClick={toggleMenu} // Add this line
+                            onClick={toggleMenu}
                             to="/aboutme"
-                            className="block my-2 lg:my-0 py-2 px-6 bg-secondary whitespace-nowrap text-primary-light font-black"
+                            className="block text-center my-2 py-2 px-6 bg-primary whitespace-nowrap text-primary-light hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
                         >
                             About Me
                         </Link>
                     </motion.li>
-                    <motion.li variants={listItemVariant}>
+                    <motion.li
+                        variants={listItemVariant}
+                        whileHover={{ scale: 1.3 }}
+                        whileTap={{ scale: 1.3 }}
+                    >
                         <Link
-                            onClick={toggleMenu} // Add this line
+                            onClick={toggleMenu}
                             to="/contact"
-                            className="block my-2 lg:my-0 py-2 px-6 bg-primary whitespace-nowrap text-primary-light font-black"
+                            className="block text-center my-2 py-2 px-6 bg-primary whitespace-nowrap text-primary-light hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
                         >
                             Contact
                         </Link>

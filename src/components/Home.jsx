@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import EpicSlider from "./EpicSlider";
-import mikaText from "../assets/icouldbebrownicouldebeblue.svg";
 import moreEducationDeets from "../assets/moreeducationdetails.svg";
 import edueducaeducation from "../assets/edueducaeducation.svg";
 import me from "../assets/me.png";
@@ -14,7 +13,7 @@ import CoolLines from "./CoolLines";
 const Home = () => {
     return (
         <div className="home overflow-x-hidden">
-            <section className="h-screen bg-primary flex flex-col justify-between relative overflow-hidden">
+            <section className="h-screen bg-black flex flex-col justify-between relative overflow-hidden">
                 <CoolLines />
                 <motion.img
                     animate={{ y: 0, opacity: 100 }}
@@ -26,9 +25,7 @@ const Home = () => {
                 />
                 <h1 className="flex flex-col text-2xl sm:text-3xl lg:text-6xl mt-32 md:mt-0 md:gap-4 mx-4 sm:mx-8 z-40">
                     <span className="italic font-montserrat text-primary-light font-bold">
-
                         Welcome to my portfolio
-
                     </span>
                     <span>
                         I <span className="text-secondary-light"> design </span>
@@ -55,15 +52,13 @@ const Home = () => {
             </section>
             <EpicSlider />
             <section className="flex xl:flex-row flex-col-reverse w-full">
-                <div className="lg:flex-1 flex bg-primary px-8 py-16 gap-2">
-                    <img
-                        src={mikaText}
-                        className="h-full max-h-52 sm:max-h-none"
-                        alt="lyrics from a grace kelly - MIKA"
-                    />
-                    <div className="flex flex-col lg:gap-3 text-secondary-light whitespace-nowrap justify-between">
+                <div className="lg:flex-1 flex bg-black px-8 py-32 gap-2">
+                    <Link
+                        to="/mywork"
+                        className="flex flex-col gap-2 text-secondary-light50op whitespace-nowrap justify-between"
+                    >
                         <div className="flex">
-                            <h2 className="font-bold underline text-2xl sm:text-4xl md:text-5xl xl:text-6xl">
+                            <h2 className="font-black underline text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
                                 FRONTEND DEVELOPER
                             </h2>
                             <span className="font-black text-3xl lg:text-5xl xl:text-6xl">
@@ -71,8 +66,8 @@ const Home = () => {
                             </span>
                         </div>
                         <div className="flex">
-                            <h2 className="font-bold underline text-2xl sm:text-4xl md:text-5xl xl:text-6xl">
-                                REACT DEVELOPER
+                            <h2 className="font-black underline text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
+                                BACKEND EXPERIENCED
                             </h2>
                             <span className="font-black text-3xl lg:text-5xl xl:text-6xl">
                                 .
@@ -80,30 +75,27 @@ const Home = () => {
                         </div>
 
                         <div className="flex">
-                            <h2 className="font-bold underline text-2xl sm:text-4xl md:text-5xl xl:text-6xl">
+                            <h2 className="font-black underline text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
                                 UX&UI DESIGNER
                             </h2>
                             <span className="font-black text-3xl lg:text-5xl xl:text-6xl">
                                 .
                             </span>
                         </div>
-                        <div className="flex text-secondary-light">
-                            <h1 className="font-bold underline  text-2xl sm:text-4xl md:text-5xl xl:text-6xl">
+                        <div className="flex">
+                            <span className="font-black underline  text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
                                 UNICORN DEVELOPER
-                            </h1>
-                            <span className="font-black text-3xl lg:text-5xl xl:text-6xl">
+                            </span>
+                            <span className="font-black text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
                                 .
                             </span>
                         </div>
-                        <Link
-                            to="/mywork"
-                            className="font-black text-3xl lg:text-5xl xl:text-6xl text-secondary-light50op underline"
-                        >
-                            MY WORK
-                        </Link>
-                    </div>
+                        <span className="font-black text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-secondary-light underline">
+                            LINK TO MY PROJECTS
+                        </span>
+                    </Link>
                 </div>
-                <div className="flex-1 flex flex-col justify-between px-8 pb-16 pt-32 bg-secondary-light ">
+                <div className="flex-1 flex flex-col justify-between px-8 py-32 bg-secondary-light ">
                     <div className="flex flex-col text-primary">
                         <span className="text-7xl pb-3 font-bold text-primary-light">
                             OSL<span className="o-pinpoint">O</span>, NORWAY
@@ -118,7 +110,7 @@ const Home = () => {
                     </div>
                     <Link
                         to="/aboutme"
-                        className="underline font-bold text-primary-light"
+                        className="underline text-2xl font-bold text-primary-light"
                     >
                         LINK TO ABOUT ME PAGE
                     </Link>
