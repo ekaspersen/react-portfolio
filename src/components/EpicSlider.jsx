@@ -18,7 +18,7 @@ const EpicSlider = () => {
     };
 
     return (
-        <div className="overflow-hidden bg-secondary cursor-default relative py-16">
+        <div className="overflow-hidden  cursor-default relative py-16">
             <Slider {...settings}>
                 {skills.map((text, index) => (
                     <div

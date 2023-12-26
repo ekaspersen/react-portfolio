@@ -39,5 +39,5 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
-    @apply font-inter font-normal bg-secondary text-white lg:text-xl;
+    @apply font-inter font-normal bg-black text-white lg:text-xl;
 }

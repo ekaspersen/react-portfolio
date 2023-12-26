@@ -28,7 +28,7 @@ const EmailBox = () => {
     return (
         <div
             className={`flex-1 h-full px-6 lg:max-w-full cursor-pointer bg-secondary-light text-secondary grid gap-8 place-items-center relative ${
-                showModal ? " bg-secondary bg-opacity-50 transition-all" : ""
+                showModal ? " bg-black bg-opacity-50 transition-all" : ""
             }`}
             onClick={copyToClipboard}
         >

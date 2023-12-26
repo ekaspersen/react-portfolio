@@ -91,7 +91,7 @@ const Nav = () => {
                         <Link
                             onClick={toggleMenu}
                             to="/"
-                            className="block text-center my-2 py-2 px-6 bg-primary whitespace-nowrap text-primary-light hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
+                            className="block text-center my-2 py-2 px-6 whitespace-nowrap hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
                         >
                             Home
                         </Link>
@@ -104,7 +104,7 @@ const Nav = () => {
                         <Link
                             onClick={toggleMenu}
                             to="/mywork"
-                            className="block text-center my-2 py-2 px-6 bg-primary whitespace-nowrap text-primary-light hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
+                            className="block text-center my-2 py-2 px-6 whitespace-nowrap hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
                         >
                             My Projects
                         </Link>
@@ -117,7 +117,7 @@ const Nav = () => {
                         <Link
                             onClick={toggleMenu}
                             to="/education"
-                            className="block text-center my-2 py-2 px-6 bg-primary whitespace-nowrap text-primary-light hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
+                            className="block text-center my-2 py-2 px-6 whitespace-nowrap hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
                         >
                             Education
                         </Link>
@@ -130,7 +130,7 @@ const Nav = () => {
                         <Link
                             onClick={toggleMenu}
                             to="/aboutme"
-                            className="block text-center my-2 py-2 px-6 bg-primary whitespace-nowrap text-primary-light hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
+                            className="block text-center my-2 py-2 px-6 whitespace-nowrap hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
                         >
                             About Me
                         </Link>
@@ -143,7 +143,7 @@ const Nav = () => {
                         <Link
                             onClick={toggleMenu}
                             to="/contact"
-                            className="block text-center my-2 py-2 px-6 bg-primary whitespace-nowrap text-primary-light hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
+                            className="block text-center my-2 py-2 px-6 whitespace-nowrap hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
                         >
                             Contact
                         </Link>

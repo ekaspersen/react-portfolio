@@ -18,7 +18,7 @@ const ContactSlider = ({ direction = "ltr" }) => {
     };
 
     return (
-        <div className="overflow-hidden min-h-[64px] bg-secondary">
+        <div className="overflow-hidden min-h-[64px] ">
             <Slider {...settings}>
                 {words.map((text, index) => (
                     <div

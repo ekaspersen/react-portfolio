@@ -25,11 +25,11 @@ module.exports = {
                     light: "#884E8C",
                 },
                 secondary: {
-                    DEFAULT: "#261B10",
+                    DEFAULT: "#111111",
                     light: "#B6DC76",
                     light50op: "rgba(182,220,118,50%)",
                 },
-                black: "#000000",
+                black: "#111111",
                 white: "#FFFFFFEE",
             },
         },

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import EpicSlider from "./EpicSlider";
-import moreEducationDeets from "../assets/moreeducationdetails.svg";
 import edueducaeducation from "../assets/edueducaeducation.svg";
 import me from "../assets/me.png";
 ScrollToTopButton;
@@ -23,28 +22,62 @@ const Home = () => {
                     src={me}
                     alt="image of me"
                 />
-                <h1 className="flex flex-col text-2xl sm:text-3xl lg:text-6xl mt-32 md:mt-0 md:gap-4 mx-4 sm:mx-8 z-40">
-                    <span className="italic font-montserrat text-primary-light font-bold">
-                        Welcome to my portfolio
+                <div className="flex flex-col mt-32 md:mt-0 md:gap-4 lg:gap-8 mx-4 sm:mx-8 z-40">
+                    <span className="flex flex-col">
+                        <h1 className="italic text-2xl sm:text-3xl lg:text-6xl font-montserrat text-primary-light font-black">
+                            Welcome to my portfolio
+                        </h1>
+                        <span className="font-black text-secondary-light italic font-montserrat">
+                            Frontend developer with experience in backend and
+                            design
+                        </span>
+                        <span className=" text-secondary-light50op italic font-montserrat">
+                            from brief to hosting. - Fullstack-ish unicorn
+                            developer
+                        </span>
                     </span>
-                    <span>
-                        I <span className="text-secondary-light"> design </span>
-                        and <span className="text-secondary-light"> code </span>
-                        websites.
+                    <div className="flex flex-col">
+                        <span className="text-xs font-montserrat italic font-bold text-secondary-light50op">
+                            Navigate:
+                        </span>
+                        <div className="flex gap-4 text-sm underline underline-offset-[6px]  font-black flex-wrap italic font-montserrat ">
+                            <Link
+                                className="hover:text-secondary-light hover:scale-110 focus:text-secondary-light focus:scale-110"
+                                to="/mywork"
+                            >
+                                My projects
+                            </Link>
+                            <Link
+                                className="hover:text-secondary-light hover:scale-110 focus:text-secondary-light focus:scale-110 "
+                                to="/education"
+                            >
+                                Education
+                            </Link>
+                            <Link
+                                className="hover:text-secondary-light hover:scale-110 focus:text-secondary-light focus:scale-110 "
+                                to="/aboutme"
+                            >
+                                About me
+                            </Link>
+                        </div>
+                    </div>
+                    <span className="flex flex-col text-sm italic font-montserrat">
+                        <span className="opacity-50">Favourite hobbies:</span>
+                        <span className="opacity-50">
+                            Cooking | Weightlifting | Design | Learning
+                        </span>
                     </span>
-                    <span className="text-sm italic font-montserrat">
-                        - Eskil K. Hagen, Frontend Developer
-                    </span>
-                </h1>
+                </div>
                 <div className="w-full flex z-40">
                     <div className="flex-1 px-2 sm:px-8 gap-1 text-xs sm:text-base">
-                        <p className="font-bold opacity-50 max-w-short-text text-secondary-light">
-                            A Frontend developer and UX designer with a passion
-                            for great user experience and clean code.
+                        <p className="font-bold opacity-40 max-w-short-text text-primary-light">
+                            A Frontend developer and UI designer with a passion
+                            for great user experience and clean scalable code. I
+                            also enjoy tacos !
                         </p>
                     </div>
                     <div className="flex-1 px-2 sm:px-8 bg-secondary-light  text-xs sm:text-base flex items-center">
-                        <p className="font-bold text-secondary">
+                        <p className="font-black text-secondary">
                             SCROLL TO LEARN MORE ABOUT ME
                         </p>
                     </div>
@@ -125,10 +158,19 @@ const Home = () => {
                         alt="graphic"
                     />
                 </div>
-                <div className="flex-1 flex flex-col p-4 sm:px-16 py-16 gap-8">
-                    <h2 className="text-6xl italic font-bold font-montserrat mb-8  ">
-                        RELEVANT STUDIES
-                    </h2>
+                <div className="flex-1 flex flex-col p-4 sm:px-16 py-8 gap-8">
+                    <div className="flex flex-col gap-4">
+                        <h2 className="text-6xl italic font-bold font-montserrat   ">
+                            RELEVANT STUDIES
+                        </h2>
+                        <Link
+                            to="/education"
+                            className="mb-8 underline underline-offset-[6px] hover:text-2xl text-secondary-light50op whitespace-nowrap hover:text-secondary-light w-fit font-montserrat italic text-xl text-primary-light font-black flex flex-col"
+                        >
+                            Click here to read more about them !
+                        </Link>
+                    </div>
+
                     <div className="flex flex-col">
                         <span className="text-3xl lg:text-5xl font-black text-secondary-light">
                             Frontend Development
@@ -153,25 +195,6 @@ const Home = () => {
                             Bodin videregående skole, 1 year (IKT-drift og
                             utvikling)
                         </span>
-                    </div>
-                    <div className="flex max-h-fit">
-                        <Link
-                            to="/education"
-                            className="sm:text-3xl whitespace-nowrap max-h-fit font-black flex flex-col"
-                        >
-                            <span>Link to="/education"</span>
-                            <span>Link to="/education"</span>
-                            <span>Link to="/education"</span>
-                            <span>Link to="/education"</span>
-                            <span>Link to="/education"</span>
-                        </Link>
-                        <div className="w-full max-h-[175px] ml-auto ">
-                            <img
-                                src={moreEducationDeets}
-                                className="w-full h-full"
-                                alt="more details about my studies"
-                            />
-                        </div>
                     </div>
                 </div>
             </section>

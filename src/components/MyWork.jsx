@@ -28,8 +28,8 @@ import prismaLogo from "../assets/icons/prismaLogo.png";
 const MyWork = () => {
     return (
         <div className="flex flex-col">
-            <div className="w-full bg-black h-24"></div>
-            <div className="flex ">
+            <div className="w-full bg-black h-[82px] lg:h-[90px]"></div>
+            <div className="flex py-16 bg-black">
                 <div className="flex lg:flex-1 items-center flex-col px-8 py-16 gap-8 bg-primary text-secondary-light">
                     <h1 className="text-5xl font-montserrat italic font-black max-w-long-text w-full">
                         My Projects
@@ -46,7 +46,7 @@ const MyWork = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex-1 min-h-full bg-black min-w-[32px]"></div>
+                <div className="flex-1 min-w-[32px]"></div>
             </div>
             <section className="min-h-screen flex flex-col-reverse py-16 gap-8 lg:flex-row-reverse bg-primary">
                 <div className="flex-1 min-h-full flex flex-col gap-8 justify-center items-center">
