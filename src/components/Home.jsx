@@ -22,25 +22,25 @@ const Home = () => {
                     src={me}
                     alt="image of me"
                 />
-                <div className="flex flex-col mt-32 md:mt-0 md:gap-4 lg:gap-8 mx-4 sm:mx-8 z-40">
-                    <span className="flex flex-col">
-                        <h1 className="italic text-2xl sm:text-3xl lg:text-6xl font-montserrat text-primary-light font-black">
-                            Welcome to my portfolio
+                <div className="flex flex-col mt-32 md:mt-0 gap-4 lg:gap-8 mx-4 sm:mx-8 z-40">
+                    <span className="flex flex-col gap-2">
+                        <h1 className="italic text-6xl font-montserrat text-primary-light font-black">
+                            Welcome !
                         </h1>
-                        <span className="font-black text-secondary-light italic font-montserrat">
-                            Frontend developer with experience in backend and
-                            design
+                        <span className="font-black max-w-short-text lg:text-lg lg:max-w-long-text text-secondary-light italic font-montserrat">
+                            I am a frontend developer with experience in backend
+                            and design. This is my portfolio
                         </span>
                         <span className=" text-secondary-light50op italic font-montserrat">
                             from brief to hosting. - Fullstack-ish unicorn
                             developer
                         </span>
                     </span>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col mt-4">
                         <span className="text-xs font-montserrat italic font-bold text-secondary-light50op">
                             Navigate:
                         </span>
-                        <div className="flex gap-4 text-sm underline underline-offset-[6px]  font-black flex-wrap italic font-montserrat ">
+                        <div className="flex gap-4 text-xs underline underline-offset-[6px]  font-black flex-wrap italic font-montserrat ">
                             <Link
                                 className="hover:text-secondary-light hover:scale-110 focus:text-secondary-light focus:scale-110"
                                 to="/mywork"
@@ -61,10 +61,10 @@ const Home = () => {
                             </Link>
                         </div>
                     </div>
-                    <span className="flex flex-col text-sm italic font-montserrat">
+                    <span className="flex flex-col text-xs italic font-montserrat">
                         <span className="opacity-50">Favourite hobbies:</span>
                         <span className="opacity-50">
-                            Cooking | Weightlifting | Design | Learning
+                            Cooking | Weightlifting | Web-design
                         </span>
                     </span>
                 </div>
