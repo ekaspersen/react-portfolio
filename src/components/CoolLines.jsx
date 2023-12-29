@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const CoolLines = () => {
     return (
-        <div>
+        <div className="opacity-50 sm:opacity-100">
             <motion.svg
                 key="svg1"
                 className="absolute right-[-70px] z-10 rotate-2"
@@ -24,7 +24,7 @@ const CoolLines = () => {
 
             <motion.svg
                 key="svg2"
-                className="absolute right-[-10px]"
+                className="absolute right-[-10px] opacity-30 sm:opacity-100"
                 width="125"
                 height="1230"
                 viewBox="0 0 125 1230"

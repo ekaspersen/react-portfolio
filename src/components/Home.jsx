@@ -84,46 +84,18 @@ const Home = () => {
                 </div>
             </section>
             <EpicSlider />
-            <section className="flex xl:flex-row flex-col-reverse w-full">
-                <div className="lg:flex-1 flex bg-black px-8 py-32 gap-2">
+            <section className="flex lg:flex-row flex-col-reverse w-full">
+                <div className=" flex bg-black px-4 sm:px-8 py-32 gap-2 items-center">
                     <Link
                         to="/mywork"
-                        className="flex flex-col gap-2 text-secondary-light50op whitespace-nowrap justify-between"
+                        className="flex flex-col font-black underline text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-2xl xl:text-6xl text-secondary-light50op "
                     >
-                        <div className="flex">
-                            <h2 className="font-black underline text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
-                                FRONTEND DEVELOPER
-                            </h2>
-                            <span className="font-black text-3xl lg:text-5xl xl:text-6xl">
-                                .
-                            </span>
-                        </div>
-                        <div className="flex">
-                            <h2 className="font-black underline text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
-                                BACKEND EXPERIENCED
-                            </h2>
-                            <span className="font-black text-3xl lg:text-5xl xl:text-6xl">
-                                .
-                            </span>
-                        </div>
+                        <span>FRONTEND DEVELOPER</span>
+                        <span>BACKEND EXPERIENCED</span>
 
-                        <div className="flex">
-                            <h2 className="font-black underline text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
-                                UX&UI DESIGNER
-                            </h2>
-                            <span className="font-black text-3xl lg:text-5xl xl:text-6xl">
-                                .
-                            </span>
-                        </div>
-                        <div className="flex">
-                            <span className="font-black underline  text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
-                                UNICORN DEVELOPER
-                            </span>
-                            <span className="font-black text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
-                                .
-                            </span>
-                        </div>
-                        <span className="font-black text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-secondary-light underline">
+                        <span>UX&UI DESIGNER</span>
+                        <span>UNICORN DEVELOPER</span>
+                        <span className=" text-secondary-light underline">
                             LINK TO MY PROJECTS
                         </span>
                     </Link>
@@ -165,7 +137,7 @@ const Home = () => {
                         </h2>
                         <Link
                             to="/education"
-                            className="mb-8 underline underline-offset-[6px] hover:text-2xl text-secondary-light50op whitespace-nowrap hover:text-secondary-light w-fit font-montserrat italic text-xl text-primary-light font-black flex flex-col"
+                            className="mb-8 underline underline-offset-[6px] hover:text-2xl text-secondary-light50op whitespace-nowrap hover:text-secondary-light w-fit font-montserrat italic text-sm xs:text-xl text-primary-light font-black flex flex-col"
                         >
                             Click here to read more about them !
                         </Link>

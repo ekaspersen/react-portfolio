@@ -59,7 +59,7 @@ const Contact = () => {
                 <a
                     href="https://www.linkedin.com/in/eskil-k-hagen-43b7011a0/"
                     target="_blank"
-                    className="flex-1 w-full h-full bg-primary grid place-items-center"
+                    className="flex-1 max-w-sm xl:max-w-none w-full h-full bg-primary grid place-items-center"
                 >
                     <div className="flex flex-col gap-8 ">
                         <span className="font-montserrat text-6xl font-light italic">
