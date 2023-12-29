@@ -24,7 +24,7 @@ const bottomVariant = {
 const navVariant = {
     open: {
         height: "fit-content",
-        y: -5,
+        y: -8,
         opacity: 1,
         transition: { staggerChildren: 0.2, delayChildren: 0.3 },
     },
@@ -54,7 +54,7 @@ const Nav = () => {
             <nav className="flex flex-col h-full items-end relative">
                 <button
                     onClick={toggleMenu}
-                    className="h-8 w-12 flex flex-col justify-between"
+                    className="h-8 lg:h-7 w-12 flex flex-col justify-between"
                 >
                     <motion.div
                         className="h-1 w-full bg-white rounded-md"

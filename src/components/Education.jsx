@@ -53,7 +53,7 @@ const Education = () => {
                                     1.
                                 </span>
                                 <div className="flex flex-col">
-                                    <h2 className="text-base lg:text-xl">
+                                    <h2 className="text-base text-primary lg:text-xl">
                                         Noroff - Oslo Campus
                                     </h2>
                                     <h3 className="lg:text-3xl text-2xl text-primary-light sm:border-b-2 sm:border-secondary sm:pb-[2px]">
@@ -74,7 +74,7 @@ const Education = () => {
                                     2.
                                 </span>
                                 <div className="flex flex-col">
-                                    <h2 className="text-base lg:text-xl">
+                                    <h2 className="text-base text-primary lg:text-xl">
                                         Bodø vgs.
                                     </h2>
                                     <h3 className="lg:text-3xl text-2xl text-primary-light sm:border-b-2 sm:border-secondary sm:pb-[2px]">
@@ -95,7 +95,7 @@ const Education = () => {
                                     3.
                                 </span>
                                 <div className="flex flex-col">
-                                    <h2 className="text-base lg:text-xl">
+                                    <h2 className="text-base text-primary lg:text-xl">
                                         Bodin vgs.
                                     </h2>
                                     <h3 className="lg:text-3xl text-2xl text-primary-light border-b-2 border-secondary pb-[2px]">
@@ -112,13 +112,13 @@ const Education = () => {
             </section>
             <section
                 id="noroff"
-                className="w-full flex flex-col-reverse lg:flex-row h-fit bg-primary text-secondary-light scroll-m-16"
+                className="w-full flex flex-col-reverse lg:flex-row h-fit bg-primary scroll-m-16"
             >
-                <div className="flex-1 flex flex-col gap-8 px-4 sm:px-16 pb-16 lg:py-32 box-border">
+                <div className="flex-1 flex flex-col  gap-8 px-4 sm:px-16 pb-16 lg:py-32 box-border">
                     <h2 className="text-white font-black text-6xl lg:text-4xl xl:text-6xl w-fit">
                         My experience at Noroff
                     </h2>
-                    <div className="max-w-long-text flex flex-col gap-4 text-secondary-light">
+                    <div className="max-w-long-text  flex flex-col gap-4 text-white font-semibold">
                         <p className="font-semibold text-secondary-light50op">
                             As a Noroff graduate, I gained a thorough
                             understanding of how to build and design a website
@@ -311,7 +311,7 @@ const Education = () => {
                         </p>
 
                         <div class="flex flex-col  gap-4 lg:gap-0">
-                            <span className="text-3xl text-primary-light font-montserrat italic font-bold mb-2">
+                            <span className="text-3xl text-secondary-light font-montserrat italic font-bold mb-2">
                                 Summarised:
                             </span>
                             <details>

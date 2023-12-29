@@ -4,6 +4,7 @@ module.exports = {
     theme: {
         extend: {
             screens: {
+                xs: "430px",
                 xxl: "1540px",
                 huge: "1780px",
             },
@@ -21,13 +22,13 @@ module.exports = {
             },
             colors: {
                 primary: {
-                    DEFAULT: "#442B48",
-                    light: "#884E8C",
+                    DEFAULT: "#204251",
+                    light: "#2F6D88",
                 },
                 secondary: {
                     DEFAULT: "#111111",
-                    light: "#B6DC76",
-                    light50op: "rgba(182,220,118,50%)",
+                    light: "#9FB939",
+                    light50op: "rgba(159,185,57,50%)",
                 },
                 black: "#111111",
                 white: "#FFFFFFEE",
