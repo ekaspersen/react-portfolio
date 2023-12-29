@@ -32,8 +32,7 @@ const Home = () => {
                             and design. This is my portfolio
                         </span>
                         <span className=" text-secondary-light50op italic font-montserrat">
-                            from brief to hosting. - Fullstack-ish unicorn
-                            developer
+                            from brief to hosting. - Fullstack-ish web developer
                         </span>
                     </span>
                     <div className="flex flex-col mt-4">
