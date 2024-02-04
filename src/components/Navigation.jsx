@@ -46,7 +46,7 @@ const Nav = () => {
     const animationState = isOpen ? "open" : "closed";
 
     return (
-        <header className="header-index fixed top-0 flex left-0 right-0 justify-between items-center py-4 px-8 bg-primary text-xl">
+        <header className="header-index fixed top-0 flex left-0 right-0 justify-between items-center py-4 px-8 bg-black text-xl">
             <Link to="/" className="max-h-full">
                 <img src={logo} alt="Logo" />
             </Link>
@@ -76,7 +76,7 @@ const Nav = () => {
                     />
                 </button>
                 <motion.ul
-                    className={`flex-col bg-primary px-4 pb-4 mr-[-16px] absolute top-14 transition duration-200 ${
+                    className={`flex-col bg-black px-4 pb-4 mr-[-16px] absolute top-14 transition duration-200 ${
                         isOpen ? "flex" : "hidden"
                     }`}
                     variants={navVariant}
@@ -104,7 +104,7 @@ const Nav = () => {
                         <Link
                             onClick={toggleMenu}
                             to="/mywork"
-                            className="block text-center my-2 py-2 px-6 whitespace-nowrap hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
+                            className=" block text-center my-2 py-2 px-6 whitespace-nowrap hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
                         >
                             My Projects
                         </Link>
@@ -117,7 +117,7 @@ const Nav = () => {
                         <Link
                             onClick={toggleMenu}
                             to="/education"
-                            className="block text-center my-2 py-2 px-6 whitespace-nowrap hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
+                            className=" block text-center my-2 py-2 px-6 whitespace-nowrap hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
                         >
                             Education
                         </Link>
@@ -130,7 +130,7 @@ const Nav = () => {
                         <Link
                             onClick={toggleMenu}
                             to="/aboutme"
-                            className="block text-center my-2 py-2 px-6 whitespace-nowrap hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
+                            className=" block text-center my-2 py-2 px-6 whitespace-nowrap hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
                         >
                             About Me
                         </Link>
@@ -143,7 +143,7 @@ const Nav = () => {
                         <Link
                             onClick={toggleMenu}
                             to="/contact"
-                            className="block text-center my-2 py-2 px-6 whitespace-nowrap hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
+                            className=" block text-center my-2 py-2 px-6 whitespace-nowrap hover:bg-secondary-light hover:text-secondary focus:bg-secondary-light focus:text-secondary target:bg-secondary-light target:text-secondary font-black"
                         >
                             Contact
                         </Link>

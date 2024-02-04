@@ -9,11 +9,38 @@ import Contact from "./Contact";
 import ScrollToTopButton from "./ScrollToTopButton";
 import CoolLines from "./CoolLines";
 
+import htmlLogo from "../assets/icons/html-logo.svg";
+import restApiLogo from "../assets/icons/RestApi.png";
+import cssLogo from "../assets/icons/css-logo.svg";
+import jsLogo from "../assets/icons/javascript-logo.svg";
+import nextLogo from "../assets/icons/nextLogowhite.svg";
+import reactLogo from "../assets/icons/react-logo.svg";
+import supabaseLogo from "../assets/icons/supabase-logo.png";
+import firebaseLogo from "../assets/icons/firebase-logo.svg";
+import framerLogo from "../assets/icons/framer-motion.svg";
+import typescriptLogo from "../assets/icons/typescriptlogo.png";
+import tailwindLogo from "../assets/icons/tailwindCSS-logo.svg";
+import MyWork from "./MyWork";
+import LoadyBlobs from "./LoadyBlobs";
+import { useEffect, useState } from "react";
+
 const Home = () => {
-    return (
+    const [isLoading, setIsLoading] = useState(true);
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 900);
+        return () => clearTimeout(timer);
+    }, []);
+    return isLoading ? (
+        <LoadyBlobs />
+    ) : (
         <div className="home overflow-x-hidden">
-            <section className="h-screen bg-black flex flex-col justify-between relative overflow-hidden">
-                <CoolLines />
+            <section className="h-screen bg-black flex flex-col justify-center relative overflow-hidden">
+                <div className="absolute top-0 right-0">
+                    <CoolLines />
+                </div>
+
                 <motion.img
                     animate={{ y: 0, opacity: 100 }}
                     initial={{ y: 300, opacity: 0 }}
@@ -24,15 +51,18 @@ const Home = () => {
                 />
                 <div className="flex flex-col mt-32 md:mt-0 gap-4 lg:gap-8 mx-4 sm:mx-8 z-40">
                     <span className="flex flex-col gap-2">
-                        <h1 className="italic text-6xl font-montserrat text-primary-light font-black">
-                            Welcome !
+                        <h1 className="italic text-4xl font-montserrat font-black text-secondary-light">
+                            Eskil K. Hagen
                         </h1>
-                        <span className="font-black max-w-short-text lg:text-lg lg:max-w-long-text text-secondary-light italic font-montserrat">
-                            I am a frontend developer with experience in backend
-                            and design. This is my portfolio
+                        <span className="font-black max-w-short-text  text-primary lg:text-lg lg:max-w-long-text  italic font-montserrat">
+                            Frontend developer with experience in both backend
+                            and UI-design. This is my portfolio
                         </span>
-                        <span className=" text-secondary-light50op italic font-montserrat">
-                            from brief to hosting. - Fullstack-ish web developer
+                        <span className=" opacity-50 font-montserrat italic">
+                            Welcome to my portfolio
+                        </span>
+                        <span className=" opacity-50 font-montserrat italic mt-[-16 px]">
+                            - Eskil K. Hagen
                         </span>
                     </span>
                     <div className="flex flex-col mt-4">
@@ -60,29 +90,91 @@ const Home = () => {
                             </Link>
                         </div>
                     </div>
-                    <span className="flex flex-col text-xs italic font-montserrat">
-                        <span className="opacity-50">Favourite hobbies:</span>
-                        <span className="opacity-50">
-                            Cooking | Weightlifting | Web-design
-                        </span>
+                    <span className="flex flex-col opacity-50 text-sm italic font-montserrat">
+                        <span>I have studied code since fall 2019</span>
+                        <span>Frontend Developer | UX Designer</span>
                     </span>
                 </div>
-                <div className="w-full flex z-40">
-                    <div className="flex-1 px-2 sm:px-8 gap-1 text-xs sm:text-base">
-                        <p className="font-bold opacity-40 max-w-short-text text-primary-light">
-                            A Frontend developer and UI designer with a passion
-                            for great user experience and clean scalable code. I
-                            also enjoy tacos !
-                        </p>
-                    </div>
-                    <div className="flex-1 px-2 sm:px-8 bg-secondary-light  text-xs sm:text-base flex items-center">
-                        <p className="font-black text-secondary">
-                            SCROLL TO LEARN MORE ABOUT ME
-                        </p>
-                    </div>
+                <div className="absolute z-50 bottom-0 text-xs text-primary font-black bg-secondary-light px-4 py-4 sm:px-8 w-full">
+                    Scroll to see more ... <br />
+                    Thanks for visiting !
                 </div>
             </section>
             <EpicSlider />
+            <div className="px-4 sm:px-8 py-4 flex gap-4 justify-center flex-wrap mx-auto">
+                <div className="h-8 w-8">
+                    <img
+                        className="w-full h-full object-cover"
+                        src={htmlLogo}
+                        alt="html"
+                        title="HTML"
+                    />
+                </div>
+                <div className="h-8 w-8">
+                    <img
+                        className="w-full h-full object-cover"
+                        src={cssLogo}
+                        alt="css"
+                        title="CSS"
+                    />
+                </div>
+                <div className="h-8 w-8">
+                    <img
+                        className="w-full h-full object-cover"
+                        src={tailwindLogo}
+                        alt="TailwindCSS"
+                        title="TailwindCSS"
+                    />
+                </div>
+                <div className="h-8 w-8">
+                    <img
+                        className="w-full h-full object-cover"
+                        src={jsLogo}
+                        alt="javascript"
+                        title="javaScript"
+                    />
+                </div>
+                <div className="h-8 w-8">
+                    <img
+                        className="w-full h-full object-cover"
+                        src={typescriptLogo}
+                        alt="typescript"
+                        title="TypeScript"
+                    />
+                </div>
+                <div className="h-8 w-8">
+                    <img
+                        className="w-full h-full object-contain"
+                        src={reactLogo}
+                        alt="reactjs"
+                        title="ReactJS"
+                    />
+                </div>
+                <div className="h-8 w-8">
+                    <img
+                        className="w-full  h-full object-cover"
+                        src={nextLogo}
+                        alt="nextjs"
+                        title="NextJS"
+                    />
+                </div>
+                <div className="h-8 w-8">
+                    <img
+                        className="w-full h-full object-cover"
+                        src={supabaseLogo}
+                        alt="supabase"
+                        title="Supabase"
+                    />
+                </div>
+                <div className="h-8 w-8">
+                    <img
+                        className="w-full h-full object-cover"
+                        src={firebaseLogo}
+                        alt="firebase"
+                        title="Firebase Auth/Storage"
+                    />
+                </div>
+            </div>
             <section className="flex lg:flex-row flex-col-reverse w-full">
                 <div className=" flex bg-black px-4 sm:px-8 py-32 gap-2 items-center">
                     <Link
@@ -95,7 +187,7 @@ const Home = () => {
                         <span>UX&UI DESIGNER</span>
                         <span>UNICORN DEVELOPER</span>
                         <span className=" text-secondary-light underline">
-                            LINK TO MY PROJECTS
+                            SEE MY PROJECTS
                         </span>
                     </Link>
                 </div>
@@ -116,13 +208,13 @@ const Home = () => {
                         to="/aboutme"
                         className="underline text-2xl font-bold text-primary-light"
                     >
-                        LINK TO ABOUT ME PAGE
+                        READ MORE ABOUT ME
                     </Link>
                 </div>
             </section>
             <Contact />
             <section className="flex">
-                <div className="flex-1 w-full relative ">
+                <div className="flex-1 w-full relative">
                     <img
                         src={edueducaeducation}
                         className="absolute w-full h-full  object-cover min-[1600px]:object-contain"
@@ -136,40 +228,42 @@ const Home = () => {
                         </h2>
                         <Link
                             to="/education"
-                            className="mb-8 underline underline-offset-[6px] hover:text-2xl text-secondary-light50op whitespace-nowrap hover:text-secondary-light w-fit font-montserrat italic text-sm xs:text-xl text-primary-light font-black flex flex-col"
+                            className="mb-8 underline underline-offset-[6px] text-secondary-light50op whitespace-nowrap hover:text-secondary-light w-fit font-montserrat italic text-sm xs:text-xl text-primary-light font-black flex flex-col"
                         >
-                            Click here to read more about them !
+                            <motion.span whileHover={{ scale: 1.1 }}>
+                                Click here to read more about them !
+                            </motion.span>
                         </Link>
                     </div>
 
                     <div className="flex flex-col">
-                        <span className="text-3xl lg:text-5xl font-black text-secondary-light">
+                        <span className="text-3xl lg:text-5xl font-black text-primary-light">
                             Frontend Development
                         </span>
-                        <span className="font-bold text-primary-light">
+                        <span className="font-bold ">
                             Noroff - School of Technology, 2 years
                         </span>
                     </div>
                     <div className="flex flex-col">
-                        <span className="text-3xl xl:text-5xl font-black text-secondary-light">
+                        <span className="text-3xl xl:text-5xl font-black text-primary-light">
                             General Studies + IT1 - programfag
                         </span>
-                        <span className="font-bold text-primary-light">
+                        <span className="font-bold ">
                             Bodø videregående skole, 1 year (Påbygg)
                         </span>
                     </div>
                     <div className="flex flex-col">
-                        <span className="text-3xl xl:text-5xl font-black text-secondary-light">
+                        <span className="text-3xl xl:text-5xl font-black text-primary-light">
                             ICT: Maintenance and development
                         </span>
-                        <span className="font-bold text-primary-light">
+                        <span className="font-bold ">
                             Bodin videregående skole, 1 year (IKT-drift og
                             utvikling)
                         </span>
                     </div>
                 </div>
             </section>
-            <ScrollToTopButton />
+            <MyWork />
         </div>
     );
 };

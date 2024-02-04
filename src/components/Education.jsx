@@ -377,7 +377,7 @@ const Education = () => {
                             IT1 - Programfag
                         </span>
                         <span className="text-xl text-white font-bold">
-                            2020 - 2021
+                            2019 - 2020
                         </span>
                     </div>
                     <div className="md:max-w-long-text lg:max-w-none flex scroll-m-80 lg:scroll-m-[-20000px] bg-primary font-medium flex-col gap-8">

@@ -1,21 +1,39 @@
 import { motion } from "framer-motion";
-import me from "../assets/me.png";
+import me from "../assets/speilselfy.png";
+import me2 from "../assets/eskilsmiler.png";
+import me3 from "../assets/me.png";
 import ScrollToTopButton from "./ScrollToTopButton";
 import CoolLines from "./CoolLines";
 import SkillsModal from "./SkillsModal";
 const AboutMe = () => {
     return (
-        <div className="pt-28 flex flex-col justify-center items-center max-w-screen relative overflow-hidden">
+        <div className=" flex flex-col justify-center items-center max-w-screen relative overflow-hidden">
             <CoolLines />
             <motion.img
                 animate={{ y: 0, opacity: 100 }}
                 initial={{ y: 300, opacity: 0 }}
-                transition={{ duration: 1, delay: 1 }}
-                className="fixed bottom-0 right-0 max-h-60 lg:max-h-80 z-20"
+                transition={{ duration: 1, delay: 0.5 }}
+                className="fixed bottom-0 right-4 max-h-60 lg:max-h-80 z-20"
+                src={me3}
+                alt="image of me"
+            />
+            <motion.img
+                animate={{ y: 0, opacity: 100 }}
+                initial={{ y: 300, opacity: 0 }}
+                transition={{ duration: 1, delay: 1.3 }}
+                className="fixed bottom-[-20px] right-[-32px] max-h-60 lg:max-h-80 z-20"
                 src={me}
                 alt="image of me"
             />
-            <div className=" z-10 flex flex-col justify-between px-8 pb-16 pt-32 bg-secondary-light ">
+            <motion.img
+                animate={{ y: 0, opacity: 100 }}
+                initial={{ y: 300, opacity: 0 }}
+                transition={{ duration: 1, delay: 3 }}
+                className="fixed bottom-0 right-0 max-h-60 lg:max-h-80 z-20"
+                src={me2}
+                alt="image of me"
+            />
+            <div className=" z-10 flex flex-col justify-between px-8 pb-16 mt-32 pt-32 bg-secondary-light ">
                 <div className="flex flex-col text-primary">
                     <span className="text-7xl pb-3 font-bold text-primary-light">
                         OSL<span className="o-pinpoint">O</span>, NORWAY
@@ -27,7 +45,7 @@ const AboutMe = () => {
                     <span className="font-bold">22 YEARS YOUNG</span>
                 </div>
             </div>
-            <div className="z-10 flex flex-col justify-between px-8 relative py-16 gap-4 bg-primary max-w-3xl text-secondary-light50op">
+            <div className="z-10 flex flex-col justify-between px-8 relative py-16 gap-4 bg-primary max-w-3xl">
                 <h1 className="font-black text-5xl mb-4 text-secondary-light">
                     About Me
                 </h1>
@@ -39,7 +57,7 @@ const AboutMe = () => {
                     website and its deployment.
                 </p>
 
-                <p className="font-medium">
+                <p className="font-medium opacity-80">
                     I've learned the basics of programming through a bit of php
                     and JS at high-school, mostly JS and NodeJS in the last
                     couple of years at Noroff. In the last two years I've
@@ -54,7 +72,7 @@ const AboutMe = () => {
                         web-applications.
                     </span>
                 </p>
-                <p className="font-medium">
+                <p className="font-medium opacity-80">
                     With a Solid background in CSS i can make any design come to
                     life on the web. Whether it is CSS, SASS, TailwindCSS or
                     Bootstrap i can make it mobile responsive, animated and
@@ -62,7 +80,7 @@ const AboutMe = () => {
                     the User interface -(design) and make it come to life with
                     CSS.
                 </p>
-                <p className="font-medium">
+                <p className="font-medium opacity-80">
                     Away from my professional life, I value the time spent with
                     friends and engaging in various activities. These
                     experiences help me maintain a balanced lifestyle, providing

@@ -142,9 +142,15 @@ const MyWork = () => {
                     </div>
                 </div>
                 <div className="flex-1 min-h-full flex flex-col gap-8 justify-center items-center px-8">
-                    <h2 className="text-5xl font-black font-montserrat italic text-secondary-light w-full max-w-long-text">
-                        CATCH THE FOX
-                    </h2>
+                    <div className="flex flex-col w-full max-w-long-text">
+                        <span className="font-black text-xl font-montserrat italic text-primary-light">
+                            Work in progress ...
+                        </span>
+                        <h2 className="text-5xl font-black font-montserrat italic text-secondary-light w-full max-w-long-text">
+                            CATCH THE FOX
+                        </h2>
+                    </div>
+
                     <p className="max-w-long-text">
                         Catch the fox is a upincoming Rock-band from Oslo,
                         Norway. They gave me one of their t-shirt designs and i
@@ -226,9 +232,15 @@ const MyWork = () => {
                     </div>
                 </div>
                 <div className="flex-1 min-h-full flex flex-col gap-8 justify-center items-center px-8">
-                    <h2 className="text-5xl font-black font-montserrat italic text-secondary-light w-full max-w-long-text">
-                        Tetrad Marketing
-                    </h2>
+                    <div className="flex flex-col w-full max-w-long-text">
+                        <span className="font-black text-xl font-montserrat italic text-primary-light">
+                            Spring 2023
+                        </span>
+                        <h2 className="text-5xl font-black font-montserrat italic text-secondary-light w-full max-w-long-text">
+                            Tetrad Marketing
+                        </h2>
+                    </div>
+
                     <p className="max-w-long-text">
                         This website is a ReactJs/Vite project that uses
                         Firebase/Auth for User authentication to the Admin
@@ -268,7 +280,7 @@ const MyWork = () => {
                             href="https://panorama-nu.vercel.app/"
                             target="blank"
                         >
-                            Link to website
+                            Link to website (Fall 2022)
                         </a>
                     </p>
                 </div>
@@ -349,9 +361,15 @@ const MyWork = () => {
                     </div>
                 </div>
                 <div className="flex-1 min-h-full flex flex-col gap-8 justify-center items-center px-8">
-                    <h2 className="text-5xl font-black font-montserrat italic text-secondary-light w-full max-w-long-text">
-                        BidHouse
-                    </h2>
+                    <div className="flex flex-col w-full max-w-long-text">
+                        <span className="font-black text-xl font-montserrat italic text-primary-light">
+                            Christmas 2022
+                        </span>
+                        <h2 className="text-5xl font-black font-montserrat italic text-secondary-light w-full max-w-long-text">
+                            BidHouse
+                        </h2>
+                    </div>
+
                     <p className="max-w-long-text">
                         BidHouse is my semester project exam for my 3rd semester
                         at Noroff.
@@ -446,9 +464,15 @@ const MyWork = () => {
                     </div>
                 </div>
                 <div className="flex-1 min-h-full flex flex-col gap-8 justify-center items-center px-8">
-                    <h2 className="text-5xl font-black font-montserrat italic text-secondary-light w-full max-w-long-text">
-                        The CSM
-                    </h2>
+                    <div className="flex flex-col w-full max-w-long-text">
+                        <span className="font-black text-xl font-montserrat italic text-primary-light">
+                            Christmas 2021
+                        </span>
+                        <h2 className="text-5xl font-black font-montserrat italic text-secondary-light w-full max-w-long-text">
+                            The CSM
+                        </h2>
+                    </div>
+
                     <p className="max-w-long-text">
                         The community science museum website is the semester
                         exam for my 1st semester at Noroff.
