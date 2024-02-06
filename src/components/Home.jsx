@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { easeOut, motion } from "framer-motion";
 import EpicSlider from "./EpicSlider";
 import edueducaeducation from "../assets/edueducaeducation.svg";
 import me from "../assets/me.png";
@@ -38,7 +38,7 @@ const Home = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoading(false);
-        }, 900);
+        }, 1500);
         return () => clearTimeout(timer);
     }, []);
     return isLoading ? (
@@ -56,12 +56,21 @@ const Home = () => {
                 <motion.img
                     animate={{ y: 0, opacity: 100 }}
                     initial={{ y: 300, opacity: 0 }}
-                    transition={{ duration: 1, delay: 1 }}
+                    transition={{ duration: 1, delay: 3 }}
                     className="max-w-xs w-[49vw] lg:w-full absolute bottom-0 right-0 z-40"
                     src={me}
                     alt="image of me"
                 />
-                <div className="flex flex-col mt-32 md:mt-0 gap-4 lg:gap-8 mx-4 sm:mx-8 z-40">
+                <motion.div
+                    initial={{ x: "-100%" }}
+                    animate={{ x: 0 }}
+                    transition={{
+                        delay: 0.5,
+                        duration: 0.9, // Total duration for spins plus fade out
+                        ease: easeOut,
+                    }}
+                    className="flex flex-col mt-32 md:mt-0 gap-4 lg:gap-8 mx-4 sm:mx-8 z-40"
+                >
                     <span className="flex flex-col gap-2">
                         <h1 className="italic text-4xl font-montserrat font-black text-primary-light">
                             Eskil K. Hagen
@@ -100,15 +109,24 @@ const Home = () => {
                         <span>I have studied code since fall 2019</span>
                         <span>Frontend Developer | UX Designer</span>
                     </span>
-                </div>
-                <div className="absolute bottom-[-100px] right-[-60px] outline-primary outline outline-8 outline-offset-8 rounded-full w-[320px] h-[320px] overflow-hidden sm:w-[416px] sm:h-[416px] lg:w-[460px] lg:h-[460px] bg-primary">
+                </motion.div>
+                <motion.div className="absolute bottom-[-100px] right-[-60px] outline-primary outline outline-8 outline-offset-8 rounded-full w-[320px] h-[320px] overflow-hidden sm:w-[416px] sm:h-[416px] lg:w-[460px] lg:h-[460px] bg-primary">
                     <img
                         src={gptBackdrop}
                         className="object-cover absolute h-full w-full opacity-10 rotate-45"
                         alt="backdrop"
                     />
-                </div>
-                <div className="absolute top-24 right-0  md:flex px-4 sm:px-8 hidden justify-center gap-4 max-w-lg flex-wrap mx-auto bg-secondary-light50op rounded-l-xl py-8">
+                </motion.div>
+                <motion.div
+                    initial={{ x: "100%" }}
+                    animate={{ x: 0 }}
+                    transition={{
+                        delay: 1.2,
+                        duration: 0.9, // Total duration for spins plus fade out
+                        ease: easeOut,
+                    }}
+                    className="absolute top-24 right-0  md:flex px-4 sm:px-8 hidden justify-center gap-4 max-w-lg flex-wrap mx-auto bg-secondary-light50op rounded-l-xl py-8"
+                >
                     <motion.div
                         whileHover={{ scale: 1.2 }}
                         className="flex flex-col gap-1 items-center"
@@ -447,7 +465,7 @@ const Home = () => {
                             Github
                         </span>
                     </motion.div>
-                </div>
+                </motion.div>
             </section>
             <EpicSlider />
             <section className="flex lg:flex-row flex-col-reverse w-full">

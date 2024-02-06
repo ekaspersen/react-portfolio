@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { easeOut, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 
@@ -46,7 +46,16 @@ const Nav = () => {
     const animationState = isOpen ? "open" : "closed";
 
     return (
-        <header className="header-index fixed top-0 flex left-0 right-0 justify-between items-center py-4 px-8 bg-black text-xl">
+        <motion.header
+            initial={{ y: "-100%" }}
+            animate={{ y: 0 }}
+            transition={{
+                delay: 2,
+                duration: 0.9, // Total duration for spins plus fade out
+                ease: easeOut,
+            }}
+            className="header-index fixed top-0 flex left-0 right-0 justify-between items-center py-4 px-8 bg-black text-xl"
+        >
             <Link to="/" className="max-h-full">
                 <img src={logo} alt="Logo" />
             </Link>
@@ -150,7 +159,7 @@ const Nav = () => {
                     </motion.li>
                 </motion.ul>
             </nav>
-        </header>
+        </motion.header>
     );
 };
 
