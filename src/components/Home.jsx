@@ -18,8 +18,19 @@ import reactLogo from "../assets/icons/react-logo.svg";
 import supabaseLogo from "../assets/icons/supabase-logo.png";
 import firebaseLogo from "../assets/icons/firebase-logo.svg";
 import framerLogo from "../assets/icons/framer-motion.svg";
+import wordpressLogo from "../assets/icons/wordpressLogo.svg";
 import typescriptLogo from "../assets/icons/typescriptlogo.png";
 import tailwindLogo from "../assets/icons/tailwindCSS-logo.svg";
+import npmLogo from "../assets/icons/npm.png";
+import sassLogo from "../assets/icons/sassLogo.png";
+import viteLogo from "../assets/icons/vite-logo.svg";
+import seoLogo from "../assets/icons/seoLogo.png";
+import nodejsLogo from "../assets/icons/nodejsLogo.png";
+import figmaLogo from "../assets/icons/figma.png";
+import gitLogo from "../assets/icons/gitLogo.png";
+import githubLogo from "../assets/icons/githubLogo.webp";
+import databaseLogo from "../assets/icons/databaseLogo.png";
+import gptBackdrop from "../assets/gptBackdrop.webp";
 import MyWork from "./MyWork";
 import LoadyBlobs from "./LoadyBlobs";
 import { useEffect, useState } from "react";
@@ -37,10 +48,13 @@ const Home = () => {
     ) : (
         <div className="home overflow-x-hidden">
             <section className="h-screen bg-black flex flex-col justify-center relative overflow-hidden">
-                <div className="absolute top-0 right-0">
-                    <CoolLines />
+                <div className="absolute w-full h-full">
+                    <img
+                        src={gptBackdrop}
+                        className="object-fill min-h-screen w-full opacity-[2%]"
+                        alt="backdrop"
+                    />
                 </div>
-
                 <motion.img
                     animate={{ y: 0, opacity: 100 }}
                     initial={{ y: 300, opacity: 0 }}
@@ -51,18 +65,12 @@ const Home = () => {
                 />
                 <div className="flex flex-col mt-32 md:mt-0 gap-4 lg:gap-8 mx-4 sm:mx-8 z-40">
                     <span className="flex flex-col gap-2">
-                        <h1 className="italic text-4xl font-montserrat font-black text-secondary-light">
+                        <h1 className="italic text-4xl font-montserrat font-black text-primary-light">
                             Eskil K. Hagen
                         </h1>
-                        <span className="font-black max-w-short-text  text-primary lg:text-lg lg:max-w-long-text  italic font-montserrat">
+                        <span className="font-bold opacity-80 max-w-short-text lg:text-lg lg:max-w-long-text  italic font-montserrat">
                             Frontend developer with experience in both backend
-                            and UI-design. This is my portfolio
-                        </span>
-                        <span className=" opacity-50 font-montserrat italic">
-                            Welcome to my portfolio
-                        </span>
-                        <span className=" opacity-50 font-montserrat italic mt-[-16 px]">
-                            - Eskil K. Hagen
+                            and UI-design. This is my portfolio.
                         </span>
                     </span>
                     <div className="flex flex-col mt-4">
@@ -95,85 +103,688 @@ const Home = () => {
                         <span>Frontend Developer | UX Designer</span>
                     </span>
                 </div>
-                <div className="absolute z-50 bottom-0 text-xs text-primary font-black bg-secondary-light px-4 py-4 sm:px-8 w-full">
-                    Scroll to see more ... <br />
-                    Thanks for visiting !
+                <div className="absolute bottom-[-100px] right-[-60px] outline-primary outline outline-8 outline-offset-8 rounded-full p-40 sm:p-52 lg:p-60 bg-primary"></div>
+                <div className="absolute  bottom-0 xl:left-0 xl:right-0 md:flex px-4 sm:px-8 py-4 hidden justify-center gap-4 max-w-lg flex-wrap mx-auto xl:bg-secondary-light50op xl:rounded-t-xl xl:pt-8">
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full h-full object-cover"
+                                src={htmlLogo}
+                                alt="html"
+                                title="HTML"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            HTML
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        {" "}
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full  h-full object-cover"
+                                src={seoLogo}
+                                alt="SEO"
+                                title="SEO (Search Engine Optimization)"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            SEO
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        {" "}
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full h-full object-cover"
+                                src={cssLogo}
+                                alt="css"
+                                title="CSS"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            CSS
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full h-full object-cover"
+                                src={tailwindLogo}
+                                alt="TailwindCSS"
+                                title="TailwindCSS"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            Tailwind
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full  h-full object-cover"
+                                src={sassLogo}
+                                alt="sass"
+                                title="SASS/SCSS"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            SASS
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full  h-full object-contain"
+                                src={framerLogo}
+                                alt="framermotion"
+                                title="Framer Motion"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            Motion
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full  h-full object-contain"
+                                src={figmaLogo}
+                                alt="figma"
+                                title="Figma"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            Figma
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full h-full object-cover"
+                                src={jsLogo}
+                                alt="javascript"
+                                title="javaScript"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            JS
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full h-full object-cover"
+                                src={typescriptLogo}
+                                alt="typescript"
+                                title="TypeScript"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            TS
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full  h-full object-cover"
+                                src={viteLogo}
+                                alt="vite"
+                                title="ViteJs vanilla | Vite/ReactJS"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            Vite
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full h-full object-contain"
+                                src={reactLogo}
+                                alt="reactjs"
+                                title="ReactJS"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            ReactJS
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full  h-full object-cover"
+                                src={nextLogo}
+                                alt="nextjs"
+                                title="NextJS"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            NextJS
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full h-full object-cover"
+                                src={supabaseLogo}
+                                alt="supabase"
+                                title="Supabase"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            Supabase
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full h-full object-cover"
+                                src={firebaseLogo}
+                                alt="firebase"
+                                title="Firebase Auth/Storage"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            Firebase
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full  h-full object-cover"
+                                src={wordpressLogo}
+                                alt="wordpress"
+                                title="Headless CMS | Basic Wordpress knowledge"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            Wordpress
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full  h-full object-cover"
+                                src={restApiLogo}
+                                alt="sql"
+                                title="SQL | CRUD | API fetch"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            Sql/Api
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full  h-full object-cover"
+                                src={databaseLogo}
+                                alt="database"
+                                title="DB modelling | phpMySQL | SQL"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            DB
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full  h-full object-contain"
+                                src={nodejsLogo}
+                                alt="nodejs"
+                                title="NodeJS"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            NodeJs
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full  h-full object-cover"
+                                src={npmLogo}
+                                alt="npm"
+                                title="npm"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            NPM
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full  h-full object-cover"
+                                src={gitLogo}
+                                alt="git"
+                                title="Git | branch/pr-management"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            GIT
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        className="flex flex-col gap-1 items-center"
+                    >
+                        <div className="h-8 w-8">
+                            <img
+                                className="w-full bg-white rounded-full h-full object-cover"
+                                src={githubLogo}
+                                alt="github"
+                                title="Github"
+                            />
+                        </div>
+                        <span className="text-xs font-montserrat italic opacity-50">
+                            Github
+                        </span>
+                    </motion.div>
                 </div>
             </section>
             <EpicSlider />
-            <div className="px-4 sm:px-8 py-4 flex gap-4 justify-center flex-wrap mx-auto">
-                <div className="h-8 w-8">
-                    <img
-                        className="w-full h-full object-cover"
-                        src={htmlLogo}
-                        alt="html"
-                        title="HTML"
-                    />
-                </div>
-                <div className="h-8 w-8">
-                    <img
-                        className="w-full h-full object-cover"
-                        src={cssLogo}
-                        alt="css"
-                        title="CSS"
-                    />
-                </div>
-                <div className="h-8 w-8">
-                    <img
-                        className="w-full h-full object-cover"
-                        src={tailwindLogo}
-                        alt="TailwindCSS"
-                        title="TailwindCSS"
-                    />
-                </div>
-                <div className="h-8 w-8">
-                    <img
-                        className="w-full h-full object-cover"
-                        src={jsLogo}
-                        alt="javascript"
-                        title="javaScript"
-                    />
-                </div>
-                <div className="h-8 w-8">
-                    <img
-                        className="w-full h-full object-cover"
-                        src={typescriptLogo}
-                        alt="typescript"
-                        title="TypeScript"
-                    />
-                </div>
-                <div className="h-8 w-8">
-                    <img
-                        className="w-full h-full object-contain"
-                        src={reactLogo}
-                        alt="reactjs"
-                        title="ReactJS"
-                    />
-                </div>
-                <div className="h-8 w-8">
-                    <img
-                        className="w-full  h-full object-cover"
-                        src={nextLogo}
-                        alt="nextjs"
-                        title="NextJS"
-                    />
-                </div>
-                <div className="h-8 w-8">
-                    <img
-                        className="w-full h-full object-cover"
-                        src={supabaseLogo}
-                        alt="supabase"
-                        title="Supabase"
-                    />
-                </div>
-                <div className="h-8 w-8">
-                    <img
-                        className="w-full h-full object-cover"
-                        src={firebaseLogo}
-                        alt="firebase"
-                        title="Firebase Auth/Storage"
-                    />
-                </div>
+            <div className="px-4  sm:px-8 py-4 flex md:hidden gap-6 flex-wrap mx-auto">
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full h-full object-cover"
+                            src={htmlLogo}
+                            alt="html"
+                            title="HTML"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        HTML
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    {" "}
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full  h-full object-cover"
+                            src={seoLogo}
+                            alt="SEO"
+                            title="SEO (Search Engine Optimization)"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        SEO
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    {" "}
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full h-full object-cover"
+                            src={cssLogo}
+                            alt="css"
+                            title="CSS"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        CSS
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full h-full object-cover"
+                            src={tailwindLogo}
+                            alt="TailwindCSS"
+                            title="TailwindCSS"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        Tailwind
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full  h-full object-cover"
+                            src={sassLogo}
+                            alt="sass"
+                            title="SASS/SCSS"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        SASS
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full  h-full object-contain"
+                            src={framerLogo}
+                            alt="framermotion"
+                            title="Framer Motion"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        Motion
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full  h-full object-contain"
+                            src={figmaLogo}
+                            alt="figma"
+                            title="Figma"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        Figma
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full h-full object-cover"
+                            src={jsLogo}
+                            alt="javascript"
+                            title="javaScript"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        JS
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full h-full object-cover"
+                            src={typescriptLogo}
+                            alt="typescript"
+                            title="TypeScript"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        TS
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full  h-full object-cover"
+                            src={viteLogo}
+                            alt="vite"
+                            title="ViteJs vanilla | Vite/ReactJS"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        Vite
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full h-full object-contain"
+                            src={reactLogo}
+                            alt="reactjs"
+                            title="ReactJS"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        ReactJS
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full  h-full object-cover"
+                            src={nextLogo}
+                            alt="nextjs"
+                            title="NextJS"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        NextJS
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full h-full object-cover"
+                            src={supabaseLogo}
+                            alt="supabase"
+                            title="Supabase"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        Supabase
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full h-full object-cover"
+                            src={firebaseLogo}
+                            alt="firebase"
+                            title="Firebase Auth/Storage"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        Firebase
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full  h-full object-cover"
+                            src={wordpressLogo}
+                            alt="wordpress"
+                            title="Headless CMS | Basic Wordpress knowledge"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        Wordpress
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full  h-full object-cover"
+                            src={restApiLogo}
+                            alt="sql"
+                            title="SQL | CRUD | API fetch"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        Sql/Api
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full  h-full object-cover"
+                            src={databaseLogo}
+                            alt="database"
+                            title="DB modelling | phpMySQL | SQL"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        DB
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full  h-full object-contain"
+                            src={nodejsLogo}
+                            alt="nodejs"
+                            title="NodeJS"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        NodeJs
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full  h-full object-cover"
+                            src={npmLogo}
+                            alt="npm"
+                            title="npm"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        NPM
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full  h-full object-cover"
+                            src={gitLogo}
+                            alt="git"
+                            title="Git | branch/pr-management"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        GIT
+                    </span>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="flex flex-col gap-1 items-center"
+                >
+                    <div className="h-8 w-8">
+                        <img
+                            className="w-full bg-white rounded-full h-full object-cover"
+                            src={githubLogo}
+                            alt="github"
+                            title="Github"
+                        />
+                    </div>
+                    <span className="text-xs font-montserrat italic opacity-50">
+                        Github
+                    </span>
+                </motion.div>
             </div>
             <section className="flex lg:flex-row flex-col-reverse w-full">
                 <div className=" flex bg-black px-4 sm:px-8 py-32 gap-2 items-center">
