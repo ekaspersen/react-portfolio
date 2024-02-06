@@ -62,7 +62,7 @@ const Home = () => {
                     alt="image of me"
                 />
                 <motion.div
-                    initial={{ x: "-100%" }}
+                    initial={{ x: "-120%" }}
                     animate={{ x: 0 }}
                     transition={{
                         delay: 0.5,
@@ -118,7 +118,7 @@ const Home = () => {
                     />
                 </motion.div>
                 <motion.div
-                    initial={{ x: "100%" }}
+                    initial={{ x: "120%" }}
                     animate={{ x: 0 }}
                     transition={{
                         delay: 1.2,

@@ -47,7 +47,7 @@ const Nav = () => {
 
     return (
         <motion.header
-            initial={{ y: "-100%" }}
+            initial={{ y: "-120%" }}
             animate={{ y: 0 }}
             transition={{
                 delay: 2,
