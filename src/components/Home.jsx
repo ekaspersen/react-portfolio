@@ -45,7 +45,7 @@ const Home = () => {
         <LoadyBlobs />
     ) : (
         <div className="home overflow-x-hidden">
-            <section className="h-screen bg-black flex flex-col justify-center relative overflow-hidden">
+            <section className=" min-h-[630px] sm:h-screen bg-black flex flex-col justify-center relative overflow-hidden">
                 <div className="absolute w-full h-full">
                     <img
                         src={gptBackdrop}

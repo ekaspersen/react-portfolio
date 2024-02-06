@@ -7,12 +7,12 @@ const ContactSlider = ({ direction = "ltr" }) => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 10000,
+        speed: 11500,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 0,
-        cssEase: "linear", // change ease to linear
+        cssEase: "linear",
         variableWidth: true,
         rtl: direction === "rtl",
     };
