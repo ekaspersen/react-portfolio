@@ -7,8 +7,6 @@ ScrollToTopButton;
 
 import Contact from "./Contact";
 import ScrollToTopButton from "./ScrollToTopButton";
-import CoolLines from "./CoolLines";
-
 import htmlLogo from "../assets/icons/html-logo.svg";
 import restApiLogo from "../assets/icons/RestApi.png";
 import cssLogo from "../assets/icons/css-logo.svg";
@@ -74,10 +72,10 @@ const Home = () => {
                         </span>
                     </span>
                     <div className="flex flex-col mt-4">
-                        <span className="text-xs font-montserrat italic font-bold text-secondary-light50op">
+                        <span className="text-lg font-montserrat italic font-bold text-secondary-light50op">
                             Navigate:
                         </span>
-                        <div className="flex gap-4 text-xs underline underline-offset-[6px]  font-black flex-wrap italic font-montserrat ">
+                        <div className="flex gap-4 text-sm underline underline-offset-[6px]  font-black flex-wrap italic font-montserrat ">
                             <Link
                                 className="hover:text-secondary-light hover:scale-110 focus:text-secondary-light focus:scale-110"
                                 to="/mywork"
@@ -103,8 +101,14 @@ const Home = () => {
                         <span>Frontend Developer | UX Designer</span>
                     </span>
                 </div>
-                <div className="absolute bottom-[-100px] right-[-60px] outline-primary outline outline-8 outline-offset-8 rounded-full p-40 sm:p-52 lg:p-60 bg-primary"></div>
-                <div className="absolute  bottom-0 xl:left-0 xl:right-0 md:flex px-4 sm:px-8 py-4 hidden justify-center gap-4 max-w-lg flex-wrap mx-auto xl:bg-secondary-light50op xl:rounded-t-xl xl:pt-8">
+                <div className="absolute bottom-[-100px] right-[-60px] outline-primary outline outline-8 outline-offset-8 rounded-full w-[320px] h-[320px] overflow-hidden sm:w-[416px] sm:h-[416px] lg:w-[460px] lg:h-[460px] bg-primary">
+                    <img
+                        src={gptBackdrop}
+                        className="object-cover absolute h-full w-full opacity-10 rotate-45"
+                        alt="backdrop"
+                    />
+                </div>
+                <div className="absolute top-24 right-0  md:flex px-4 sm:px-8 hidden justify-center gap-4 max-w-lg flex-wrap mx-auto bg-secondary-light50op rounded-l-xl py-8">
                     <motion.div
                         whileHover={{ scale: 1.2 }}
                         className="flex flex-col gap-1 items-center"
