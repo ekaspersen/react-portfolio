@@ -225,7 +225,7 @@ const MyWork = () => {
                         <a
                             className="block my-2 lg:my-0 py-3 px-8 border-primary border-4 whitespace-nowrap text-primary text-xl font-black"
                             target="_blank"
-                            href="https://www.figma.com/file/uTf5RJkqPVaObfhWZplAVn/Tetrad-display-Figma?type=design&node-id=0%3A1&t=nlEYfYVNvekXC6sv-1"
+                            href="https://www.figma.com/file/8wpKzTxBUFHTkKGjf5Dm4v/Tailored-Solution-Marketing?type=design&node-id=0%3A1&mode=design&t=8piQuXHdJlLEpf0h-1"
                         >
                             Figma
                         </a>
@@ -354,7 +354,7 @@ const MyWork = () => {
                         <a
                             className="block my-2 lg:my-0 py-3 bg-secondary-light px-8 whitespace-nowrap text-primary text-xl font-black"
                             target="_blank"
-                            href="https://www.figma.com/file/LS7szsiCEJ8hNp8t0hhw3F/SEMESTER-PROJECT-2?type=design&node-id=0%3A1&t=fSFt6kRvshglbse6-1"
+                            href="https://www.figma.com/file/8wpKzTxBUFHTkKGjf5Dm4v/Tailored-Solution-Marketing?type=design&node-id=0%3A1&mode=design&t=8piQuXHdJlLEpf0h-1"
                         >
                             Figma
                         </a>
