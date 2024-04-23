@@ -103,6 +103,12 @@ const Home = () => {
                             >
                                 About me
                             </Link>
+                            <Link
+                                className="hover:text-secondary-light hover:scale-110 focus:text-secondary-light focus:scale-110 "
+                                to="/contact"
+                            >
+                                Contact
+                            </Link>
                         </div>
                     </div>
                     <span className="flex flex-col opacity-50 text-sm italic font-montserrat">
